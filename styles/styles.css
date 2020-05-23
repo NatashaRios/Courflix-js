@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+.wrapper {
+  background-color: black;
+}
 .wrapper .header .titlePage .titlePageImg {
   width: 9.3em;
   margin-top: 0.8em;
   margin-left: 5em;
+  margin-bottom: -1em;
 }
 .wrapper .header .navBar {
   display: inline;
@@ -16,26 +20,82 @@
   text-decoration: none;
   width: 3.6em;
   margin-left: 19.8em;
+  color: white;
 }
 .wrapper .header .navBar .seriesNav {
   text-decoration: none;
   width: 3.9em;
   margin-left: 1.6em;
+  color: white;
 }
 .wrapper .header .navBar .peliculasNav {
   text-decoration: none;
   width: 5.8em;
   margin-left: 1.5em;
+  color: white;
 }
 .wrapper .header .navBar .agregadosNav {
   text-decoration: none;
   width: 13.5;
   margin-left: 0.8em;
+  color: white;
 }
 .wrapper .header .navBar .listaNav {
   text-decoration: none;
   width: 4.8em;
   margin-left: 1.5em;
+  color: white;
+}
+.wrapper .heroScreen {
+  background-image: url("../assets/blackSummer.png");
+  max-width: 90em;
+  height: 50em;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.wrapper .heroScreen .titleOriginal {
+  padding: 2em;
+  font-weight: bold;
+  font-size: 1.7em;
+  padding-top: 5em;
+}
+.wrapper .heroScreen .titleSerie {
+  width: 5em;
+  font-weight: bold;
+  font-size: 4.5em;
+  margin-left: 0.8em;
+  line-height: 1em;
+  margin-top: -0.7em;
+}
+.wrapper .heroScreen .reproducir {
+  color: white;
+  font-size: 0.8em;
+  border-radius: 9px;
+  background-color: rgba(126, 121, 121, 0.6);
+  border: rgba(126, 121, 121, 0.6);
+  width: 10em;
+  height: 3.5em;
+  margin-left: 4em;
+}
+.wrapper .heroScreen .miLista {
+  color: white;
+  font-size: 0.8em;
+  border-radius: 9px;
+  background-color: rgba(126, 121, 121, 0.6);
+  border: rgba(126, 121, 121, 0.6);
+  width: 10em;
+  height: 3.5em;
+  margin-left: 1.5em;
+}
+.wrapper .heroScreen .ver {
+  display: block;
+  margin: 1.5em 0 0 3em;
+  font-size: 1.3em;
+}
+.wrapper .heroScreen .textResumen {
+  width: 25em;
+  margin: 1.5em 0 0 3em;
+  font-size: 1.3em;
 }
 
 /*# sourceMappingURL=styles.css.map */
