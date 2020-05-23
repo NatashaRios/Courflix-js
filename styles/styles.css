@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+.wrapper .header .titlePage .titlePageImg {
+  width: 9.3em;
+  margin-top: 0.8em;
+  margin-left: 5em;
+}
+.wrapper .header .navBar {
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1.8em;
+  text-align: center;
+}
+.wrapper .header .navBar .inicioNav {
+  text-decoration: none;
+  width: 3.6em;
+  margin-left: 19.8em;
+}
+.wrapper .header .navBar .seriesNav {
+  text-decoration: none;
+  width: 3.9em;
+  margin-left: 1.6em;
+}
+.wrapper .header .navBar .peliculasNav {
+  text-decoration: none;
+  width: 5.8em;
+  margin-left: 1.5em;
+}
+.wrapper .header .navBar .agregadosNav {
+  text-decoration: none;
+  width: 13.5;
+  margin-left: 0.8em;
+}
+.wrapper .header .navBar .listaNav {
+  text-decoration: none;
+  width: 4.8em;
+  margin-left: 1.5em;
+}
+
+/*# sourceMappingURL=styles.css.map */

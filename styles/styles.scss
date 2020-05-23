@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+.wrapper {
+    
+    .header {
+        .titlePage {
+            
+            .titlePageImg{
+                width: 9.3em;
+                margin-top: 0.8em;
+                margin-left: 5em;
+            }
+        }
+        .navBar {
+            display:inline;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 1.3em;
+            line-height: 1.8em;
+            text-align: center;
+            .inicioNav{
+                text-decoration: none;
+                width: 3.6em;
+                margin-left: 19.8em;
+            }
+            .seriesNav{
+                text-decoration: none;
+                width: 3.9em;
+                margin-left: 1.6em;
+            }
+            .peliculasNav{
+                text-decoration: none;
+                width: 5.8em;
+                margin-left: 1.5em;
+            }
+            .agregadosNav{
+                text-decoration: none;
+                width: 13.5;
+                margin-left: 0.8em;
+            }
+            .listaNav{
+                text-decoration: none;
+                width: 4.8em;
+                margin-left: 1.5em;
+            }
+    }//navBar
+    } //header
+
+    .heroScreen {
+        .titleOriginal {}
+        .titleSerie {}
+        .reproducir {}
+        .miLista {}
+        .ver {}
+        .textResumen {}
+    }//heroScreen
+
+    .seriesSection {
+        .seriesTitle {}
+        .series {
+            .serieImg {}
+        }//series
+    }//seriesSection
+
+    .seguirViendoSection {
+        .seguirViendoTitle {}
+        .seguirViendo {
+            .seguirViendoImg {}
+        }//seguirViendo
+    }//seguirViendoSection
+
+    .agregadoRecientementeSection {
+        .agregadosRecientementeTitle {}
+        .agregadosRecientemente {
+            .agregadosRecientementeImg {}
+        }//agregadosRecientemente
+    }//agregadoRecientementeSection
+} //wrapper
