@@ -1,0 +1,56 @@
+$pallete1: white;
+$pallete3: rgba(126, 121, 121, 0.6);
+
+.heroScreen {
+    background-image: url("../assets/blackSummer.png");
+    //background-size: cover;
+    //background-position: center;
+    max-width: 90em;
+    height: 50em;
+    color: $pallete1;
+    font-family: 'Open Sans', sans-serif;
+    .titleOriginal {
+        padding: 2em;
+        font-weight: bold;
+        font-size: 1.7em;
+        padding-top: 8em;
+    }
+    .titleSerie {
+        width: 5em;
+        font-weight: bold;
+        font-size: 4.5em;
+        margin-left: 0.8em;
+        line-height: 1em;
+        margin-top: -0.7em;
+    }
+    .reproducir {
+        color: $pallete1;
+        font-size: 0.8em;
+        border-radius: 9px;
+        background-color: $pallete3;
+        border: $pallete3;
+        width: 10em;
+        height: 3.5em;
+        margin-left: 4em;
+    }
+    .miLista {
+        color: $pallete1;
+        font-size: 0.8em;
+        border-radius: 9px;
+        background-color:$pallete3;
+        border: $pallete3;
+        width: 10em;
+        height: 3.5em;
+        margin-left: 1.5em;
+    }
+    .ver {
+        display: block;
+        margin: 1.5em 0 0 3em;
+        font-size: 1.3em;
+    }
+    .textResumen {
+        width: 25em;
+        margin: 1.5em 0 0 3em;
+        font-size: 1.3em;
+    }
+}//heroScreen

@@ -1,0 +1,22 @@
+$pallete1: white;
+
+.seriesSection {
+    .seriesTitle {
+        color: $pallete1;
+        margin-left: 3em;
+    }
+    .series {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        .serieImg {
+            margin: 1em;
+            scroll-snap-align: center;
+            
+
+            &.serieImg:nth-child(1) {
+                margin-left: 3em;
+            }
+        }  
+    }//series
+}//seriesSection

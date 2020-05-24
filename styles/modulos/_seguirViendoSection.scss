@@ -1,0 +1,22 @@
+$pallete1: white;
+
+.seguirViendoSection {
+    .seguirViendoTitle {
+        color: $pallete1;
+        margin-left: 3em;
+    }
+    .seguirViendo {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        .seguirViendoImg {
+            margin: 1em;
+            scroll-snap-align: center;
+            
+
+            &.seguirViendoImg:nth-child(1) {
+                margin-left: 3em;
+            }
+        }
+    }//seguirViendo
+}//seguirViendoSection

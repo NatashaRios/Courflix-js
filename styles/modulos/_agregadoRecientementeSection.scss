@@ -1,0 +1,22 @@
+$pallete1: white;
+
+.agregadoRecientementeSection {
+    .agregadosRecientementeTitle {
+        color: $pallete1;
+        margin-left: 3em;
+    }
+    .agregadosRecientemente {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        .agregadosRecientementeImg {
+            margin: 1em;
+            scroll-snap-align: center;
+            
+
+            &.agregadosRecientementeImg:nth-child(1) {
+                margin-left: 3em;
+            }
+        }
+    }//agregadosRecientemente
+}//agregadoRecientementeSection

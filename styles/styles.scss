@@ -1,128 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import "modulos/header";
+@import "modulos/heroScreen";
+@import "modulos/seriesSection";
+@import "modulos/seguirViendoSection";
+@import "modulos/agregadoRecientementeSection";
+
+
+
 
 .wrapper {
     background-color: black;
-    .header {
-        .titlePage {
-            .titlePageImg{
-                width: 9.3em;
-                margin-top: 0.8em;
-                margin-left: 5em;
-                margin-bottom: -1em;
-            }
-        }
-        .navBar {
-            display:inline;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            font-size: 1.3em;
-            line-height: 1.8em;
-            text-align: center;
-            .inicioNav{
-                text-decoration: none;
-                width: 3.6em;
-                margin-left: 19.8em;
-                color: white;
-            }
-            .seriesNav{
-                text-decoration: none;
-                width: 3.9em;
-                margin-left: 1.6em;
-                color: white;
-            }
-            .peliculasNav{
-                text-decoration: none;
-                width: 5.8em;
-                margin-left: 1.5em;
-                color: white;
-            }
-            .agregadosNav{
-                text-decoration: none;
-                width: 13.5;
-                margin-left: 0.8em;
-                color: white;
-            }
-            .listaNav{
-                text-decoration: none;
-                width: 4.8em;
-                margin-left: 1.5em;
-                color: white;
-            }
-    }//navBar
-    } //header
-
-    .heroScreen {
-        background-image: url("../assets/blackSummer.png");
-        //background-size: cover;
-        //background-position: center;
-        max-width: 90em;
-        height: 50em;
-        color: white;
-        font-family: 'Open Sans', sans-serif;
-        .titleOriginal {
-            padding: 2em;
-            font-weight: bold;
-            font-size: 1.7em;
-            padding-top: 5em;
-        }
-        .titleSerie {
-            width: 5em;
-            font-weight: bold;
-            font-size: 4.5em;
-            margin-left: 0.8em;
-            line-height: 1em;
-            margin-top: -0.7em;
-        }
-        .reproducir {
-            color: white;
-            font-size: 0.8em;
-            border-radius: 9px;
-            background-color:rgba(126, 121, 121, 0.6);
-            border: rgba(126, 121, 121, 0.6);
-            width: 10em;
-            height: 3.5em;
-            margin-left: 4em;
-        }
-        .miLista {
-            color: white;
-            font-size: 0.8em;
-            border-radius: 9px;
-            background-color:rgba(126, 121, 121, 0.6);
-            border: rgba(126, 121, 121, 0.6);
-            width: 10em;
-            height: 3.5em;
-            margin-left: 1.5em;
-        }
-        .ver {
-            display: block;
-            margin: 1.5em 0 0 3em;
-            font-size: 1.3em;
-        }
-        .textResumen {
-            width: 25em;
-            margin: 1.5em 0 0 3em;
-            font-size: 1.3em;
-        }
-    }//heroScreen
-
-    .seriesSection {
-        .seriesTitle {}
-        .series {
-            .serieImg {}
-        }//series
-    }//seriesSection
-
-    .seguirViendoSection {
-        .seguirViendoTitle {}
-        .seguirViendo {
-            .seguirViendoImg {}
-        }//seguirViendo
-    }//seguirViendoSection
-
-    .agregadoRecientementeSection {
-        .agregadosRecientementeTitle {}
-        .agregadosRecientemente {
-            .agregadosRecientementeImg {}
-        }//agregadosRecientemente
-    }//agregadoRecientementeSection
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
 } //wrapper
