@@ -1,5 +1,5 @@
 $pallete1: white;
-$pallete2: rgba(61, 60, 60, 0.6);
+$pallete2: rgba(7, 7, 7, 0.9);
 
 .header {
     position: fixed;
@@ -20,35 +20,42 @@ $pallete2: rgba(61, 60, 60, 0.6);
         font-size: 1.3em;
         line-height: 1.8em;
         text-align: center;
-        .inicioNav{
-            text-decoration: none;
-            width: 3.6em;
-            margin-left: 10em;
-            color: $pallete1;
-        }
-        .seriesNav{
-            text-decoration: none;
-            width: 3.9em;
-            margin-left: 1.6em;
-            color: $pallete1;
-        }
-        .peliculasNav{
-            text-decoration: none;
-            width: 5.8em;
-            margin-left: 1.5em;
-            color: $pallete1;
-        }
-        .agregadosNav{
-            text-decoration: none;
-            width: 13.5;
-            margin-left: 0.8em;
-            color: $pallete1;
-        }
         .listaNav{
-            text-decoration: none;
-            width: 4.8em;
-            margin-left: 1.5em;
-            color: $pallete1;
-        }
-}//navBar
+            display:inline;
+            .itemNav {
+                display:inline;
+                .inicioNav{
+                    text-decoration: none;
+                    width: 3.6em;
+                    margin-left: 10em;
+                    color: $pallete1;
+                }
+            
+                .seriesNav{
+                    text-decoration: none;
+                    width: 3.9em;
+                    margin-left: 1.6em;
+                    color: $pallete1;
+                }
+                .peliculasNav{
+                    text-decoration: none;
+                    width: 5.8em;
+                    margin-left: 1.5em;
+                    color: $pallete1;
+                }
+                .agregadosNav{
+                    text-decoration: none;
+                    width: 13.5;
+                    margin-left: 0.8em;
+                    color: $pallete1;
+                }
+                .listaNav{
+                    text-decoration: none;
+                    width: 4.8em;
+                    margin-left: 1.5em;
+                    color: $pallete1;
+                }
+            }//itemNav
+        }//listaNav
+    }//navBar
 } //header

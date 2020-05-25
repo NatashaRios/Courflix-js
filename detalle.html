@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coursflix</title>
-    <link rel="stylesheet" href="./styles/styles.css"> 
+    <title>Breaking Bad</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./styles/stylesDetalles.css"> 
 </head>
 <body>
     <div class="wrapper js-wrapper">
@@ -22,12 +23,18 @@
         </header>
 
         <div class="heroScreen js-heroScreen">
-            <h2 class="titleOriginal">Original de COURFLIX</h2>
-            <h1 class="titleSerie">BLACK SUMMER</h1>
-            <a class="reproducir" href="detalle.html">Reproducir</a>
+            <h1 class="titleSerie-detalle"><img src="assets/logoBreakingBad.png" alt="Logo Breaking Bad"></h1>
+            <div class="textInfo">
+                <p class="coincidence">95% de coincidencia</p>
+                <p class="year">2016</p>
+                <p class="age">16+</p>
+                <p class="seasons">5 temporadas</p>        
+            </div>
+            <a class="reproducir" href="#">Reproducir</a>
             <a class="miLista" href="#">+ mi lista</a>
-            <span class="ver">Ve la temporada 1</span>
-            <p class="textResumen">Una ansiada luna de miel. Un asesinato terrible. Varios sospechosos. Si sobreviven, serán unas vacaciones de ensueño</p>
+            <i class="fa fa-thumbs-o-up"></i>
+            <i class="fa fa-thumbs-o-down"></i>
+            <p class="textResumen">Un profesor de Química de secundaria con cáncer terminal se asocia a un ex estudiante para asegurar el futuro de su familia al fabricar y vender metanfetamina.</p>
         </div><!--heroScreen-->
 
         <div class="seriesSection" id="sectionSeries">
@@ -96,8 +103,6 @@
                 </div><!--agregadosRecientemente-->
         </div> <!--agregadoRecientementeSection-->
     </div> <!--wrapper-->
-
-  
-    <script src="./js/index.js"></script>
+    
 </body>
 </html>

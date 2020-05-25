@@ -13,10 +13,20 @@ $pallete1: white;
             margin: 1em;
             scroll-snap-align: center;
             
-
             &.serieImg:nth-child(1) {
                 margin-left: 3em;
             }
+
+            &.serieImg:hover{
+                transform: scale(1.1);
+              }
         }  
+        &::-webkit-scrollbar {
+            opacity: 0;
+        }
+        &:hover{
+            opacity: 100;
+        }
+
     }//series
 }//seriesSection

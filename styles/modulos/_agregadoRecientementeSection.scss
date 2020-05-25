@@ -17,6 +17,16 @@ $pallete1: white;
             &.agregadosRecientementeImg:nth-child(1) {
                 margin-left: 3em;
             }
+
+            &.agregadosRecientementeImg:hover{
+                transform: scale(1.1);
+              }
+        }
+        &::-webkit-scrollbar {
+            opacity: 0;
+        }
+        &:hover{
+            opacity: 100;
         }
     }//agregadosRecientemente
 }//agregadoRecientementeSection

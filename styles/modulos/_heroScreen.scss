@@ -1,14 +1,14 @@
 $pallete1: white;
 $pallete3: rgba(126, 121, 121, 0.6);
+$pallete4: rgba(243, 18, 18, 0.6);
 
 .heroScreen {
     background-image: url("../assets/blackSummer.png");
     //background-size: cover;
     //background-position: center;
     max-width: 90em;
-    height: 50em;
+    height: 45em;
     color: $pallete1;
-    font-family: 'Open Sans', sans-serif;
     .titleOriginal {
         padding: 2em;
         font-weight: bold;
@@ -24,24 +24,44 @@ $pallete3: rgba(126, 121, 121, 0.6);
         margin-top: -0.7em;
     }
     .reproducir {
+        text-decoration: none;
+        text-align: center;
         color: $pallete1;
         font-size: 0.8em;
         border-radius: 9px;
         background-color: $pallete3;
         border: $pallete3;
-        width: 10em;
-        height: 3.5em;
+        //width: 10em;
+        //height: 3em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        padding-left: 3em;
+        padding-right: 3em;
         margin-left: 4em;
+
+        &.reproducir:hover{
+            background-color: $pallete4;
+        }
     }
     .miLista {
+        text-decoration: none;
+        text-align: center;
         color: $pallete1;
         font-size: 0.8em;
         border-radius: 9px;
         background-color:$pallete3;
         border: $pallete3;
-        width: 10em;
-        height: 3.5em;
+        //width: 10em;
+        //height: 3em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        padding-left: 3em;
+        padding-right: 3em;
         margin-left: 1.5em;
+
+        &.miLista:hover {
+            background-color: $pallete4;
+        }
     }
     .ver {
         display: block;

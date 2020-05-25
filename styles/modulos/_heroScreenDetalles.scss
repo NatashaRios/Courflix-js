@@ -1,0 +1,96 @@
+$pallete1: white;
+$pallete3: rgba(126, 121, 121, 0.6);
+$pallete4: rgba(243, 18, 18, 0.6);
+$pallete5: rgb(2, 121, 2);
+
+.heroScreen {
+    background-image: url("../assets/breakingBad.png");
+    max-width: 90em;
+    height: 45em;
+    color: $pallete1;
+    .titleSerie-detalle {
+        padding: 1.5em;
+        height: 9em;
+    }
+    .textInfo{
+        display: flex;
+        margin-left: 3em;
+        .coincidence{
+            color: $pallete5;
+            font-weight: bold;
+            margin: 1em;
+        }
+        .year{
+            //margin-left: 0.2em;
+        }
+        .age{
+            margin-left: 1em;
+            text-align: center;
+            border-radius: 0.5em;
+            border: solid $pallete1;
+            width: 3em;
+            height: 1.5em;
+        }
+        .seasons{
+            margin-left: 1em;
+        }
+    }
+    .reproducir{
+        text-decoration: none;
+        color: $pallete1;
+        text-align: center;
+        font-size: 0.8em;
+        border-radius: 9px;
+        background-color: $pallete4;
+        border: $pallete4;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        margin-left: 4.5em;
+        margin-top: 2em;
+    }
+
+    .miLista{
+        text-decoration: none;
+        color: $pallete1;
+        text-align: center;
+        font-size: 0.8em;
+        border-radius: 9px;
+        background-color: $pallete3;
+        border: $pallete3;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        margin-left: 1.5em;
+        margin-top: 2em;
+    }
+    .fa-thumbs-o-up{
+        font-size: 1.3em;
+        margin-top: 2em;
+        border-radius: 2em;
+        border: solid $pallete1;
+        margin-left: 1.5em;
+        text-align: center;
+        width: 1em;
+        height: 1em;
+        padding: 0.5em;
+    }
+    .fa-thumbs-o-down{
+        font-size: 1.3em;
+        margin-top: 2em;
+        border-radius: 2em;
+        border: solid $pallete1;
+        margin-left: 1.5em;
+        text-align: center;
+        width: 1em;
+        height: 1em;
+        padding: 0.5em;
+    }
+    .textResumen{
+        width: 25em;
+        margin: 1.5em 0 0 3em;
+        font-size: 1em;
+    }
+}//heroScreen

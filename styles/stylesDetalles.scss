@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import "modulos/header";
+@import "modulos/heroScreenDetalles";
+@import "modulos/seriesSection";
+@import "modulos/seguirViendoSection";
+@import "modulos/agregadoRecientementeSection";
+
+.wrapper {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+} //wrapper

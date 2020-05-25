@@ -9,14 +9,40 @@ $pallete1: white;
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        .seguirViendoImg {
-            margin: 1em;
-            scroll-snap-align: center;
-            
+        .progress{
+            .seguirViendoImg {
+                margin: 1em;
+                scroll-snap-align: center;
+                
 
-            &.seguirViendoImg:nth-child(1) {
-                margin-left: 3em;
-            }
+                &.seguirViendoImg:nth-child(1) {
+                    margin-left: 3em;
+                }
+
+                &.seguirViendoImg:hover{
+                    transform: scale(1.1);
+                }
+
+            } //seguirViendoImg
+            .line{
+                width: 15em;
+                height: 0.3em;
+                background-color: rgb(163, 159, 159);
+                margin-left: 6em;
+
+                    .lineProgress{
+                        width: 5em;
+                        height: 100%;
+                        background-color: red;
+                    }
+            }//line
+        }//progress
+        &::-webkit-scrollbar {
+            opacity: 0;
         }
+        &:hover{
+            opacity: 100;
+        }
+        
     }//seguirViendo
 }//seguirViendoSection
