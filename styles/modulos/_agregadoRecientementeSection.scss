@@ -21,6 +21,10 @@ $pallete1: white;
             &.agregadosRecientementeImg:hover{
                 transform: scale(1.1);
               }
+
+              @media (max-width: 768px) {
+                  width: 40%;
+              }
         }
         &::-webkit-scrollbar {
             opacity: 0;
