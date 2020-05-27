@@ -23,7 +23,7 @@
         </header>
 
         <div class="heroScreen js-heroScreen">
-            <h1 class="titleSerie-detalle"><img src="assets/logoBreakingBad.png" alt="Logo Breaking Bad"></h1>
+            <h1 class="titleSerie-detalle"><img class="titleSerieImg-detalle" src="assets/logoBreakingBad.png" alt="Logo Breaking Bad"></h1>
             <div class="textInfo">
                 <p class="coincidence">95% de coincidencia</p>
                 <p class="year">2016</p>
@@ -32,77 +32,69 @@
             </div>
             <a class="reproducir" href="#">Reproducir</a>
             <a class="miLista" href="#">+ mi lista</a>
-            <i class="fa fa-thumbs-o-up"></i>
-            <i class="fa fa-thumbs-o-down"></i>
+            <i class="fa fa-thumbs-o-up js-like"></i>
+            <i class="fa fa-thumbs-o-down js-dislike"></i>
             <p class="textResumen">Un profesor de Química de secundaria con cáncer terminal se asocia a un ex estudiante para asegurar el futuro de su familia al fabricar y vender metanfetamina.</p>
         </div><!--heroScreen-->
 
-        <div class="seriesSection" id="sectionSeries">
-            <h3 class="seriesTitle">Series</h3>
-                <div class="series">
-                    <img class="serieImg" src="./assets/Dark.png" alt="Dark">
-                    <img class="serieImg" src="./assets/friends.png" alt="Friends">
-                    <img class="serieImg" src="./assets/laCasaDePapel.jpg" alt="La casa de papel">
-                    <img class="serieImg" src="./assets/loveDeathRobots.jpg" alt="Love Death Robots">
-                    <img class="serieImg" src="./assets/nailedIt.png" alt="Nailed it">
-                    <img class="serieImg" src="./assets/Sherlock.png" alt="Sherlock">
-                    <img class="serieImg" src="./assets/Vikingos.png" alt="Vikingos">
-                    <img class="serieImg" src="./assets/rick&Morty.jpg" alt="Rick & Morty">
-                </div><!--series-->
-        </div><!--seriesSection-->
+        <div class="capitulosSection">
+            <h3 class="temporada">Temporada 1</h3>
+                <div class="capitulosTemporada">
+                    <div class="capitulo">
+                        <img class="capitulosImg" src="./assets/principioDelFin.png" alt="Capítulo 1">
+                        <div class="text">
+                            <span class="title">Principio del fin</span>
+                            <p class="description">Un profesor de química de escuela secundaria recurre a la venta de drogas para mantener a su familia.</p>
+                        </div>
+                    </div>
+                    <div class="capitulo">
+                        <img class="capitulosImg" src="./assets/elGatoEnLaBolsa.png" alt="Capítulo 2">
+                        <div class="text">
+                            <span class="title">El gato en la bolsa</span>
+                            <p class="description">Luego del fracaso de su primer negocio de drogas, Walt y Jesse deben deshacerse de dos cadáveres. Skyler sospecha que su marido no está involucrado en nada bueno.</p>
+                        </div>
+                    </div> 
+                    <div class="capitulo">   
+                        <img class="capitulosImg" src="./assets/yLaBolsaEnElRio.png" alt="Capítulo 3">
+                        <div class="text">
+                            <span class="title">Y la bolsa en el río</span>
+                            <p class="description">Mientras Walt limpia el desorden que quedó tras su primer negocio de drogas, piensa en decirle a Skyler la verdad sobre su enfermedad.</p>
+                        </div>
+                    </div>
+                    <div class="capitulo">
+                        <img class="capitulosImg" src="./assets/cancer.png" alt="Capítulo 4">
+                        <div class="text">
+                            <span class="title">Cáncer</span>
+                            <p class="description">Al ser forzado a contar la verdad acerca de su enfermedad, Walt enfrenta el problema de cómo pagar una serie de caros tratamientos contra el cáncer.</p>
+                        </div>
+                    </div>
+                    <div class="capitulo">
+                        <img class="capitulosImg" src="./assets/materiaGris.png" alt="Capítulo 5">
+                        <div class="text">
+                            <span class="title">Materia gris</span>
+                            <p class="description">Skyler organiza una intervención para convencer a Walt de que acepte la generosa oferta de su ex compañero de investigaciones de pagar el tratamiento contra el cáncer.</p>
+                        </div>
+                    </div>
+                    <div class="capitulo">
+                        <img class="capitulosImg" src="./assets/unLocoPuñadoDeNada.png" alt="Capítulo 6">
+                        <div class="text">
+                            <span class="title">Un loco puñado de nada</span>
+                            <p class="description">Los efectos secundarios y el costo del tratamiento crecen, y Walt exige que Jesse encuentre un revendedor para sus drogas; Jesse termina en problemas con un ex convicto.</p>
+                        </div>
+                    </div>
+                    <div class="capitulo">
+                        <img class="capitulosImg" src="./assets/acuerdoNoViolento.png" alt="Capítulo 7">
+                        <div class="text">
+                            <span class="title">Acuerdo no violento</span>
+                            <p class="description">Tras el encuentro cercano de Jesse con la muerte, Walt acepta producir más drogas para Tuco, mientras Skyler sospecha que su hermana robó un costoso regalo para bebés.</p>
+                        </div>
+                    </div>
+                </div><!--capitulosTemporada-->                                                                                                                                                         
+        </div><!--capitulosSection-->
 
-        <div class="seguirViendoSection" id="sectionSeguirViendo">
-            <h3 class="seguirViendoTitle">Seguir viendo contenido de Natasha</h3>
-                <div class="seguirViendo">
-                    <div class="progress">
-                        <img class="seguirViendoImg" src="./assets/theEndOfTheF+++ingWorld.jpg" alt="The end of the f***ing World">
-                        <div class="line"><div class="lineProgress"></div></div>
-                    </div>
-                    <div class="progress">
-                        <img class="seguirViendoImg" src="./assets/rick&Morty.jpg" alt="Rick & Morty">
-                        <div class="line"><div class="lineProgress"></div></div>
-                    </div>
-                    <div class="progress">
-                        <img class="seguirViendoImg" src="./assets/modernFamily.png" alt="Modern Family">
-                        <div class="line"><div class="lineProgress"></div></div>
-                    </div>
-                    <div class="progress">
-                        <img class="seguirViendoImg" src="./assets/superCampeones.jpg" alt="Super campones">
-                        <div class="line"><div class="lineProgress"></div></div>
-                    </div>
-                    <div class="progress">
-                        <img class="seguirViendoImg" src="./assets/friends.png" alt="Friends">
-                        <div class="line"><div class="lineProgress"></div></div>
-                    </div>
-                        <div class="progress">
-                        <img class="seguirViendoImg" src="./assets/nailedIt.png" alt="Nailed it">
-                    <div class="line"><div class="lineProgress"></div></div>
-                    </div>
-                    <div class="progress">
-                        <img class="seguirViendoImg" src="./assets/community.png" alt="Community">
-                        <div class="line"><div class="lineProgress"></div></div>
-                    </div>
-                    <div class="progress">
-                        <img class="seguirViendoImg" src="./assets/loveDeathRobots.jpg" alt="Love Death Robots">
-                        <div class="line"><div class="lineProgress"></div></div>
-                    </div>
-            </div> <!--seguirViendo-->
-        </div> <!--seguirViendoSection-->
-
-        <div class="agregadoRecientementeSection" id="sectionAgregadoRecientemente">
-            <h3 class="agregadosRecientementeTitle">Agregados recientemente</h3>
-                <div class="agregadosRecientemente">
-                    <img class="agregadosRecientementeImg" src="./assets/Arrow.png" alt="Arrow">
-                    <img class="agregadosRecientementeImg" src="./assets/elSilencio.jpg" alt="El silencio">
-                    <img class="agregadosRecientementeImg" src="./assets/ironFist.jpg" alt="Iron fist">
-                    <img class="agregadosRecientementeImg" src="./assets/Lucifer.png" alt="Lucifer">
-                    <img class="agregadosRecientementeImg" src="./assets/Vikingos.png" alt="Vikingos">
-                    <img class="agregadosRecientementeImg" src="./assets/Theprotector.png" alt="The protector">
-                    <img class="agregadosRecientementeImg" src="./assets/youVsWild.jpg" alt="You vs Wild">
-                    <img class="agregadosRecientementeImg" src="./assets/modernFamily.png" alt="Modern Family">
-                </div><!--agregadosRecientemente-->
-        </div> <!--agregadoRecientementeSection-->
     </div> <!--wrapper-->
+
+    <script src="./js/detalles.js"></script>
     
 </body>
-</html>
+</html>                                                                                                                                                                                                                         
