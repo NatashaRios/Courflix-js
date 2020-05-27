@@ -65,7 +65,7 @@ $pallete2: rgba(7, 7, 7, 0.9);
 
                 @media (max-width: 768px) {
                     font-size: 65%;
-                    width: 15em;
+                    width: 10em;
                     height: 5em;
                     
                 }
@@ -74,7 +74,8 @@ $pallete2: rgba(7, 7, 7, 0.9);
         @media (max-width: 768px) {
             display: flex;
             justify-content: space-around;
-            margin: 1em;
+            margin-top: 2em;
+            margin-bottom: 1em;
             }
         }//capitulo
         &::-webkit-scrollbar {
