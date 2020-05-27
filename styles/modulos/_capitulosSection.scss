@@ -1,0 +1,69 @@
+$pallete1: white;
+
+.capitulosSection {
+    .temporada {
+        color: $pallete1;
+        margin-left: 3em;
+    }
+    .capitulosTemporada {
+        height: 20em;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+        .capitulo {
+            .capitulosImg{
+                margin: 1em;
+                scroll-snap-align: center;
+                
+                &.capitulosImg:nth-child(1) {
+                    margin-left: 3em;
+                }
+
+                &.capitulosImg:hover{
+                    transform: scale(1.1);
+                }
+
+                @media (max-width: 768px) {
+                    width: 40%;
+                }
+            }//capitulosImg
+
+            .text{
+                color: $pallete1;
+                font-size: 1em;
+                .title{
+                    font-weight: bold;
+                    &.title:nth-child(1) {
+                        margin-left: 3em;
+                    }
+                }
+                .description{
+                    width: 20em;
+                    margin-left: 3em;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 80%;
+                    margin-top: 2em;
+                }
+        }//text
+
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            }
+        }//capitulo
+        &::-webkit-scrollbar {
+            opacity: 0;
+        }
+        &:hover{
+            opacity: 100;
+        }
+        
+    } //capitulosTemporada
+} //capitulosSection

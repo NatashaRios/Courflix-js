@@ -1,4 +1,5 @@
 $pallete1: white;
+$pallete2: rgba(7, 7, 7, 0.9);
 
 .seguirViendoSection {
     .seguirViendoTitle {
@@ -6,6 +7,7 @@ $pallete1: white;
         margin-left: 3em;
     }
     .seguirViendo {
+        height: 17em;
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -52,7 +54,7 @@ $pallete1: white;
             
         }//progress
         &::-webkit-scrollbar {
-            opacity: 0;
+            color: $pallete2;
         }
         &:hover{
             opacity: 100;

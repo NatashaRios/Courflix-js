@@ -2,7 +2,7 @@
 .header {
   position: fixed;
   background-color: rgba(7, 7, 7, 0.9);
-  width: 100vw;
+  width: 100%;
   height: 4em;
 }
 @media (max-width: 768px) {
@@ -97,6 +97,7 @@
     bottom: 0;
     left: 0;
     width: 300px;
+    display: none;
     z-index: 1;
   }
 }
@@ -182,6 +183,7 @@
   margin-left: 3em;
 }
 .seriesSection .series {
+  height: 15em;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -198,11 +200,11 @@
 }
 @media (max-width: 768px) {
   .seriesSection .series .serieImg {
-    width: 40%;
+    width: 15em;
   }
 }
 .seriesSection .series::-webkit-scrollbar {
-  opacity: 0;
+  color: rgba(7, 7, 7, 0.9);
 }
 .seriesSection .series:hover {
   opacity: 100;
@@ -213,6 +215,7 @@
   margin-left: 3em;
 }
 .seguirViendoSection .seguirViendo {
+  height: 17em;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -255,7 +258,7 @@
   }
 }
 .seguirViendoSection .seguirViendo::-webkit-scrollbar {
-  opacity: 0;
+  color: rgba(7, 7, 7, 0.9);
 }
 .seguirViendoSection .seguirViendo:hover {
   opacity: 100;
@@ -266,6 +269,7 @@
   margin-left: 3em;
 }
 .agregadoRecientementeSection .agregadosRecientemente {
+  height: 15em;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -282,11 +286,11 @@
 }
 @media (max-width: 768px) {
   .agregadoRecientementeSection .agregadosRecientemente .agregadosRecientementeImg {
-    width: 40%;
+    width: 15em;
   }
 }
 .agregadoRecientementeSection .agregadosRecientemente::-webkit-scrollbar {
-  opacity: 0;
+  color: rgba(7, 7, 7, 0.9);
 }
 .agregadoRecientementeSection .agregadosRecientemente:hover {
   opacity: 100;
