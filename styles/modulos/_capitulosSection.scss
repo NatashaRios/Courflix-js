@@ -23,6 +23,10 @@ $pallete2: rgba(7, 7, 7, 0.9);
                 
                 &.capitulosImg:nth-child(1) {
                     margin-left: 3em;
+
+                    @media (max-width: 768px) {
+                        margin-left: 0;
+                    }
                 }
 
                 &.capitulosImg:hover{
@@ -30,8 +34,8 @@ $pallete2: rgba(7, 7, 7, 0.9);
                 }
 
                 @media (max-width: 768px) {
-                   width: 40%;
-                   height: 60%;
+                   width: 10em;
+                   height: 6em;
                 }
             }//capitulosImg
 
@@ -42,23 +46,34 @@ $pallete2: rgba(7, 7, 7, 0.9);
                     font-weight: bold;
                     &.title:nth-child(1) {
                         margin-left: 3em;
+                        
+                        @media (max-width: 768px) {
+                            margin-left: 0;
+                        }
+
                     }
                 }
                 .description{
                     width: 20em;
                     margin-left: 3em;
+
+                    @media (max-width: 768px) {
+                        margin-left: 0;
+                    }
+
                 }
 
                 @media (max-width: 768px) {
                     font-size: 65%;
-                    width: 50%;
-                    height: 60%;
+                    width: 15em;
+                    height: 5em;
+                    
                 }
         }//text
 
         @media (max-width: 768px) {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             margin: 1em;
             }
         }//capitulo

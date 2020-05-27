@@ -203,13 +203,18 @@
 .capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:nth-child(1) {
   margin-left: 3em;
 }
+@media (max-width: 768px) {
+  .capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:nth-child(1) {
+    margin-left: 0;
+  }
+}
 .capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:hover {
   transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-    width: 40%;
-    height: 60%;
+    width: 10em;
+    height: 6em;
   }
 }
 .capitulosSection .capitulosTemporada .capitulo .text {
@@ -222,21 +227,31 @@
 .capitulosSection .capitulosTemporada .capitulo .text .title.title:nth-child(1) {
   margin-left: 3em;
 }
+@media (max-width: 768px) {
+  .capitulosSection .capitulosTemporada .capitulo .text .title.title:nth-child(1) {
+    margin-left: 0;
+  }
+}
 .capitulosSection .capitulosTemporada .capitulo .text .description {
   width: 20em;
   margin-left: 3em;
 }
 @media (max-width: 768px) {
+  .capitulosSection .capitulosTemporada .capitulo .text .description {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
   .capitulosSection .capitulosTemporada .capitulo .text {
     font-size: 65%;
-    width: 50%;
-    height: 60%;
+    width: 15em;
+    height: 5em;
   }
 }
 @media (max-width: 768px) {
   .capitulosSection .capitulosTemporada .capitulo {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 1em;
   }
 }
