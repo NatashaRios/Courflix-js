@@ -15,7 +15,7 @@ $pallete2: rgba(7, 7, 7, 0.9);
         @media (max-width: 768px) {
             display: flex;
             flex-direction: column;
-            max-height: 100%;
+            
         }
         .capitulo {
             .capitulosImg{
@@ -73,10 +73,9 @@ $pallete2: rgba(7, 7, 7, 0.9);
         }//text
 
         @media (max-width: 768px) {
+            flex: 1 0 auto;
             display: flex;
             justify-content: space-around;
-            margin-top: 2em;
-            margin-bottom: 1em;
             }
         }//capitulo
         &::-webkit-scrollbar {

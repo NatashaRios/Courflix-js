@@ -8,6 +8,7 @@ $pallete5: rgb(2, 121, 2);
     max-width: 90em;
     height: 45em;
     color: $pallete1;
+    margin-top: -2em;
 
     @media (max-width: 768px) {
         background-size: cover;
