@@ -194,6 +194,7 @@
   .capitulosSection .capitulosTemporada {
     display: flex;
     flex-direction: column;
+    max-height: 100%;
   }
 }
 .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
@@ -266,7 +267,7 @@
 .wrapper {
   background-color: black;
   font-family: "Open Sans", sans-serif;
-  min-width: 100vw;
+  height: 100%;
 }
 
 /*# sourceMappingURL=stylesDetalles.css.map */
