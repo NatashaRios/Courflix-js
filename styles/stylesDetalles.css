@@ -208,7 +208,7 @@
 }
 @media (max-width: 768px) {
   .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-    width: 40%;
+    height: 50%;
   }
 }
 .capitulosSection .capitulosTemporada .capitulo .text {
@@ -228,7 +228,8 @@
 @media (max-width: 768px) {
   .capitulosSection .capitulosTemporada .capitulo .text {
     font-size: 80%;
-    margin-top: 2em;
+    margin-top: 1em;
+    height: 50%;
   }
 }
 @media (max-width: 768px) {
@@ -238,7 +239,7 @@
   }
 }
 .capitulosSection .capitulosTemporada::-webkit-scrollbar {
-  opacity: 0;
+  color: rgba(7, 7, 7, 0.9);
 }
 .capitulosSection .capitulosTemporada:hover {
   opacity: 100;
