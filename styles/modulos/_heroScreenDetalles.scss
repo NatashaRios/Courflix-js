@@ -16,6 +16,9 @@ $mobile: 480px;
         background-position: center;
         height: 35rem;
     }
+    @media (max-width: $mobile) {
+        height: 30rem;
+    }
     .titleSerie-detalle {
         .titleSerieImg-detalle {
             width: 17rem;

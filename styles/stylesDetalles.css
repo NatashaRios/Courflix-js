@@ -88,6 +88,11 @@
     height: 35rem;
   }
 }
+@media (max-width: 480px) {
+  .heroScreen {
+    height: 30rem;
+  }
+}
 .heroScreen .titleSerie-detalle .titleSerieImg-detalle {
   width: 17rem;
   margin-left: 5rem;
@@ -292,6 +297,11 @@
     width: 12rem;
   }
 }
+@media (max-width: 480px) {
+  .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
+    width: 10rem;
+  }
+}
 .capitulosSection .capitulosTemporada .capitulo .text {
   color: white;
 }
@@ -302,6 +312,11 @@
 }
 .capitulosSection .capitulosTemporada .capitulo .text .title.title:nth-child(1) {
   margin-left: 3rem;
+}
+@media (max-width: 480px) {
+  .capitulosSection .capitulosTemporada .capitulo .text .title.title:nth-child(1) {
+    margin-left: 0;
+  }
 }
 @media (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .text .title {
@@ -322,8 +337,10 @@
 @media (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .text .description {
     font-size: 0.7em;
-    width: 15rem;
+    width: 16rem;
+    margin: 0;
     line-height: 1rem;
+    margin-top: 0.2rem;
   }
 }
 @media (max-width: 768px) {

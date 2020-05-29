@@ -15,7 +15,7 @@ $mobile: 480px;
             margin-top: 1rem;
         }
         .agregadosRecientementeImg {
-            width: 22rem;
+            width: 20rem;
             &.agregadosRecientementeImg:nth-child(1) {
                 margin-left: 3em;
             }
@@ -29,7 +29,7 @@ $mobile: 480px;
             }
 
             @media (max-width: $mobile) {
-                width: 9rem;
+                width: 11rem;
             }
           
         }

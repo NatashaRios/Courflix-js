@@ -255,7 +255,7 @@
   }
 }
 .seriesSection .series .serieImg {
-  width: 22rem;
+  width: 20rem;
 }
 .seriesSection .series .serieImg.serieImg:nth-child(1) {
   margin-left: 3em;
@@ -270,7 +270,7 @@
 }
 @media (max-width: 480px) {
   .seriesSection .series .serieImg {
-    width: 9rem;
+    width: 11rem;
   }
 }
 
@@ -289,7 +289,7 @@
   }
 }
 .seguirViendoSection .seguirViendo .progress .seguirViendoImg {
-  width: 22rem;
+  width: 20rem;
 }
 .seguirViendoSection .seguirViendo .progress .seguirViendoImg.seguirViendoImg:nth-child(1) {
   margin-left: 3em;
@@ -304,7 +304,7 @@
 }
 @media (max-width: 480px) {
   .seguirViendoSection .seguirViendo .progress .seguirViendoImg {
-    width: 9rem;
+    width: 11rem;
   }
 }
 .seguirViendoSection .seguirViendo .progress .line {
@@ -316,13 +316,15 @@
 }
 @media (max-width: 768px) {
   .seguirViendoSection .seguirViendo .progress .line {
-    margin-left: 4rem;
-    width: 6rem;
+    margin-left: 7rem;
+    width: 8rem;
   }
 }
 @media (max-width: 480px) {
   .seguirViendoSection .seguirViendo .progress .line {
     margin-left: 6rem;
+    margin-top: 1rem;
+    width: 6rem;
   }
 }
 .seguirViendoSection .seguirViendo .progress .line .lineProgress {
@@ -402,7 +404,7 @@
   }
 }
 .agregadoRecientementeSection .agregadosRecientemente .agregadosRecientementeImg {
-  width: 22rem;
+  width: 20rem;
 }
 .agregadoRecientementeSection .agregadosRecientemente .agregadosRecientementeImg.agregadosRecientementeImg:nth-child(1) {
   margin-left: 3em;
@@ -417,7 +419,7 @@
 }
 @media (max-width: 480px) {
   .agregadoRecientementeSection .agregadosRecientemente .agregadosRecientementeImg {
-    width: 9rem;
+    width: 11rem;
   }
 }
 

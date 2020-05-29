@@ -35,7 +35,7 @@ $mobile: 480px;
                    width: 12rem;
                 }
                 @media (max-width: $mobile) {
-                    //width: 10rem;
+                    width: 10rem;
                 }
             }//capitulosImg
 
@@ -47,7 +47,12 @@ $mobile: 480px;
                     margin-bottom: 0.5rem;
                     &.title:nth-child(1) {
                         margin-left: 3rem;
-                    }  
+                    
+                        @media (max-width: $mobile){
+                             margin-left: 0;
+                        }
+
+                    }
 
                     @media (max-width: $mobile) {
                         font-size: 0.8em;
@@ -66,9 +71,10 @@ $mobile: 480px;
 
                     @media (max-width: $mobile) {
                         font-size: 0.7em;
-                        width: 15rem;
-                       // margin-right: 1rem;
+                        width: 16rem;
+                        margin: 0;
                         line-height: 1rem;
+                        margin-top: 0.2rem;
                     }
                 
                 }
