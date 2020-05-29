@@ -1,33 +1,64 @@
 $pallete1: white;
 $pallete3: rgba(126, 121, 121, 0.6);
 $pallete4: rgba(243, 18, 18, 0.6);
+$tablet: 768px;
+$mobile: 480px;
 
 .heroScreen {
     background-image: url("../assets/blackSummer.png");
-    //background-size: cover;
-    //background-position: center;
-    max-width: 90em;
-    height: 45em;
+    max-width: 90rem;
+    height: 45rem;
     color: $pallete1;
-    margin-top: -2em;
 
-    @media (max-width: 768px) {
+    @media (max-width: $tablet) {
         background-size: cover;
         background-position: center;
+        height: 35rem;
     }
-    .titleOriginal {
-        padding: 2em;
-        font-weight: bold;
-        font-size: 1.7em;
-        padding-top: 8em;
+
+    @media (max-width: $mobile) {
+        height: 30rem;
     }
-    .titleSerie {
-        width: 5em;
-        font-weight: bold;
-        font-size: 4.5em;
-        margin-left: 0.8em;
-        line-height: 1em;
-        margin-top: -0.7em;
+    .title{
+        .titleOriginal {
+            margin: 10rem auto 6rem 6rem;
+            font-weight: bold;
+            font-size: 1.7rem;
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+        .titleSerie {
+            width: 5rem;
+            font-weight: bold;
+            font-size: 4.5em;
+            margin: auto auto 2rem 6rem;
+
+            @media (max-width: $tablet) {
+                font-size: 1.5em;
+                margin: 8rem auto 1rem 1rem;
+                width: 20rem;
+            }
+        }
+    }
+    .textMobile {
+        display: none;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+
+        @media (max-width: $tablet) {
+            display: block;
+        }
+        .yearMobile{
+            display: inline;
+        }
+        .ageMobile {
+            display: inline;
+        }
+        .seasonsMobile {
+            display: inline;
+        }
     }
     .reproducir {
         text-decoration: none;
@@ -37,19 +68,16 @@ $pallete4: rgba(243, 18, 18, 0.6);
         border-radius: 9px;
         background-color: $pallete3;
         border: $pallete3;
-        //width: 10em;
-        //height: 3em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 3em;
-        padding-right: 3em;
-        margin-left: 4em;
-
+        padding: 1rem 2.5rem 1rem 2.5rem;
+        margin-left: 7em;
+       
         &.reproducir:hover{
             background-color: $pallete4;
-        }
+        } 
 
-        
+        @media (max-width: $tablet) {
+            margin-left: 1rem;
+        }
     }
     .miLista {
         text-decoration: none;
@@ -59,30 +87,34 @@ $pallete4: rgba(243, 18, 18, 0.6);
         border-radius: 9px;
         background-color:$pallete3;
         border: $pallete3;
-        //width: 10em;
-        //height: 3em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 3em;
-        padding-right: 3em;
-        margin-left: 1.5em;
+        padding: 1rem 3rem 1rem 3rem;
+        margin-left: 1.5rem;
 
         &.miLista:hover {
             background-color: $pallete4;
         }
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
     .ver {
         display: block;
-        margin: 1.5em 0 0 3em;
+        margin: 3rem 0 0 6rem;
         font-size: 1.3em;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
     .textResumen {
         width: 25em;
-        margin: 1.5em 0 0 3em;
+        margin: 1.5rem 0 0 6rem;
         font-size: 1.3em;
-    }
+        line-height: 1.8rem;
 
-    @media (max-width: 768px) {
-        font-size: 60%;
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
 }//heroScreen

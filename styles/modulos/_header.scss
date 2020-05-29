@@ -1,117 +1,119 @@
 $pallete1: white;
 $pallete2: rgba(7, 7, 7, 0.9);
+$tablet: 768px;
+$mobile: 480px;
 
 .header {
     position: fixed;
     background-color: $pallete2;
     width: 100%;
-    height: 4em;
+    height: 3.5rem;
+    z-index: 1;
 
-    @media (max-width: 768px) {
-        height: 2.5em;
+    @media (max-width: $tablet) {
+        height: 2.5rem;
+    }
+
+    @media (max-width: $mobile) {
+        height: 2rem;
     }
     .menuOn{
         display: none;
-        margin-left: 1em;
-        width: 1.5em;
-        height: 1em;
-        position: relative;
-        z-index: 2;
-        .menuHamburguesa{
-            width: 100%;
-            height: 3px;
-            border-radius: 4px;
-            display: block;
-            position: absolute;
-            background-color: $pallete1;
-
-            &.menuHamburguesa:nth-child(2){
-                top: calc(50% - 2px);
-            }
-            &.menuHamburguesa:nth-child(3){
-                bottom: 0;
-            }
+        outline: none;
+        background-color: transparent;
+        border: $pallete2;
+        margin-left: 1rem;
+        height: 1.5rem;
+        .fa-bars {
+            color: $pallete1;
+            font-size: 1.5em;
         }
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             display: block;
-            margin-top: 0.8em;
-
         }
     }
     .titlePage {
         .titlePageImg{
-            width: 8em;
-            margin-top: 1.5em;
-            margin-left: 5em;
-            margin-bottom: -1em;
+            width: 8rem;
+            margin-top: 0.8rem;
+            margin-left: 5rem;
+            margin-bottom: -1rem;
 
-            @media (max-width: 768px) {
-                width: 5em;
-                margin-top: -1em;
-                padding-bottom: 2em;
-                
+            @media (max-width: $tablet) {
+                width: 5rem;
+                margin-top: -1rem;
+                margin-bottom: 0;
+                padding-bottom: 1rem;
             }
         }
     }
     .navBar {
-        //display: flex;
         font-weight: bold;
-        font-size: 0.9em;
+        font-size: 0.9rem;
         text-align: center;
-        margin-left: 20em;
-        margin-top: -2.5em;
+        margin-left: 16rem;
+        margin-top: -1rem;
         .listaNav{
             display: flex;
             .itemNav {
                 display: flex;
                 .inicioNav{
                     text-decoration: none;
-                    margin-left: 0.8em;
+                    margin-left: 0.8rem;
                     color: $pallete1;
                 }
             
                 .seriesNav{
                     text-decoration: none;
-                    margin-left: 0.8em;
+                    margin-left: 0.8rem;
                     color: $pallete1;
                 }
                 .peliculasNav{
                     text-decoration: none;
-                    margin-left: 0.8em;
+                    margin-left: 0.8rem;
                     color: $pallete1;
                 }
                 .agregadosNav{
                     text-decoration: none;
-                    margin-left: 0.8em;
+                    margin-left: 0.8rem;
                     color: $pallete1;
                 }
                 .miListaNav{
                     text-decoration: none;
-                    margin-left: 0.8em;
+                    margin-left: 0.8rem;
                     color: $pallete1;
                 }
-                @media (max-width: 768px) {
-                    margin-left: -2.5em;
-                    padding-top: 2em;
-                    font-size: 1em;
-                    
-                    
+               
+                @media (max-width: $tablet) {
+                    text-align: start;
+                    width: 10rem;
+                    padding-top: 1em;
+                    height: 2.5rem;
+
+                    &:hover {
+                        background-color: black;
+                    }
+
+                    @media (max-width: $mobile) {
+                        font-size: 0.9em;
+                    }
                 }
             }//itemNav
-            @media (max-width: 768px) {
+            @media (max-width: $tablet) {
                 display: flex;
                 flex-direction: column;
-                align-content: flex-start;
+                margin-bottom: 0;
+                margin-top: 0.5rem;
                 background-color: $pallete2;
                 height: 100vh;
-                text-align: left;
-                margin-left: -20em;
-                margin-top: 1em;
-                width: 9em;
+                width: 10rem;
+                margin-left: -16rem;
                 display: none;
-                z-index: 1;
+                } 
+
+                @media (max-width: $tablet) {
+                    margin-top: 0;
                 }
         }//listaNav
-        
-    }//navBar
+        }//navBar
 } //header

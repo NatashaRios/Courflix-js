@@ -1,31 +1,38 @@
 $pallete1: white;
 $pallete2: rgba(7, 7, 7, 0.9);
+$tablet: 768px;
+$mobile: 480px;
 
 .capitulosSection {
+    width: 100%;
     .temporada {
         color: $pallete1;
-        margin-left: 3em;
+        //margin-left: 3rem;
+        //margin-top: 1rem;
+        margin: 1rem 0 1rem 3rem;
+
     }
     .capitulosTemporada {
-        height: 20em;
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
+        //height: 20rem;
+        //display: flex;
+        //max-width: 90rem;
+        //overflow-x: auto;
+        //scroll-snap-type: x mandatory;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             display: flex;
             flex-direction: column;
-            
         }
         .capitulo {
             .capitulosImg{
-                margin: 1em;
-                scroll-snap-align: center;
+                margin-bottom: 1rem;
+                width: 20rem;
+                //scroll-snap-align: center;
                 
                 &.capitulosImg:nth-child(1) {
-                    margin-left: 3em;
+                    margin-left: 3rem;
 
-                    @media (max-width: 768px) {
+                    @media (max-width: $tablet) {
                         margin-left: 0;
                     }
                 }
@@ -34,56 +41,58 @@ $pallete2: rgba(7, 7, 7, 0.9);
                     transform: scale(1.1);
                 }
 
-                @media (max-width: 768px) {
-                   width: 10em;
-                   height: 6em;
+                @media (max-width: $tablet) {
+                   width: 13rem;
+                   
+                   //height: 6em;
+                   
+                }
+
+                @media (max-width: $mobile) {
+                    width: 11rem;
                 }
             }//capitulosImg
 
             .text{
                 color: $pallete1;
-                font-size: 1em;
                 .title{
+                    font-size: 1rem;
                     font-weight: bold;
+                    margin-bottom: 0.5rem;
                     &.title:nth-child(1) {
-                        margin-left: 3em;
-                        
-                        @media (max-width: 768px) {
-                            margin-left: 0;
-                        }
+                        margin-left: 3rem;
+                    }  
 
+                    @media (max-width: $mobile) {
+                        font-size: 0.8em;
                     }
+                        
                 }
                 .description{
-                    width: 20em;
-                    margin-left: 3em;
+                    font-size: 0.8rem;
+                    width: 20rem;
+                    //margin-left: 3rem;
+                    //margin-top: 0.5rem;
+                    margin: 0.5rem 0 1rem 3rem;
+                    line-height: 1.3rem;
 
-                    @media (max-width: 768px) {
-                        margin-left: 0;
+                    @media (max-width: $mobile) {
+                        font-size: 0.7em;
+                        width: 13rem;
+                        margin-right: 1rem;
                     }
-
-                }
-
-                @media (max-width: 768px) {
-                    font-size: 65%;
-                    width: 10em;
-                    height: 5em;
-                    
+                
                 }
         }//text
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             flex: 1 0 auto;
             display: flex;
             justify-content: space-around;
             }
+
+           
         }//capitulo
-        &::-webkit-scrollbar {
-           color: $pallete2;
-        }
-        &:hover{
-            opacity: 100;
-        }
         
     } //capitulosTemporada
 } //capitulosSection

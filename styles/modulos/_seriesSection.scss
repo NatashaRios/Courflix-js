@@ -1,5 +1,7 @@
 $pallete1: white;
 $pallete2: rgba(7, 7, 7, 0.9);
+$tablet: 768px;
+$mobile: 480px;
 
 .seriesSection {
     .seriesTitle {
@@ -7,13 +9,19 @@ $pallete2: rgba(7, 7, 7, 0.9);
         margin-left: 3em;
     }
     .series {
-        height: 15em;
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
+       // display: flex;
+       // overflow-x: auto;
+        //scroll-snap-type: x mandatory;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        @media (max-width: $tablet) {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
         .serieImg {
-            margin: 1em;
-            scroll-snap-align: center;
+              width: 20rem;
+         //   scroll-snap-align: center;
             
             &.serieImg:nth-child(1) {
                 margin-left: 3em;
@@ -23,16 +31,14 @@ $pallete2: rgba(7, 7, 7, 0.9);
                 transform: scale(1.1);
               }
 
-              @media (max-width: 768px) {
-                width: 15em;
-              }
-        }  
-        &::-webkit-scrollbar {
-            color: $pallete2;
-        }
-        &:hover{
-            opacity: 100;
-        }
+              @media (max-width: $tablet) {
+                width: 11rem;
+            }
 
+            @media (max-width: $mobile) {
+                width: 13rem;
+            }
+
+        }  
     }//series
 }//seriesSection

@@ -2,126 +2,188 @@ $pallete1: white;
 $pallete3: rgba(126, 121, 121, 0.6);
 $pallete4: rgba(243, 18, 18, 0.6);
 $pallete5: rgb(2, 121, 2);
+$tablet: 768px;
+$mobile: 480px;
 
 .heroScreen {
     background-image: url("../assets/breakingBad.png");
-    max-width: 90em;
-    height: 45em;
+    max-width: 90rem;
+    height: 45rem;
     color: $pallete1;
-    margin-top: -2em;
 
-    @media (max-width: 768px) {
+    @media (max-width: $tablet) {
         background-size: cover;
         background-position: center;
+        height: 35rem;
     }
     .titleSerie-detalle {
-        padding: 1.5em;
-        height: 7em;
-
         .titleSerieImg-detalle {
-            width: 10em;;
+            width: 17rem;
+            margin-left: 5rem;
+            margin-top: 5rem;
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
         }
     }
     .textInfo{
         display: flex;
-        margin-left: 3em;
+        margin-left: 5rem;
         .coincidence{
             color: $pallete5;
             font-weight: bold;
-            margin: 1em;
+            margin: 1rem;
         }
         .year{
-            //margin-left: 0.2em;
+            margin-top: 1rem;
         }
         .age{
-            margin-left: 1em;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+            padding-top: 0.3rem;
             text-align: center;
-            border-radius: 0.5em;
-            border: solid $pallete1;
-            width: 3em;
-            height: 1.5em;
+            border-radius: 0.5rem;
+            border: 1px solid $pallete1;
+            width: 3rem;
+            height: 1.5rem;
         }
         .seasons{
-            margin-left: 1em;
+            margin-left: 1rem;
+            margin-top: 1rem;
         }
-    }
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }//textInfo
+    .textMobile {
+        display: none;
+        color: $pallete1;
+        .titleMobile {
+            font-size: 1.5rem;
+            padding-top: 10rem;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .yearMobile {
+            display: inline;
+            font-size: 1rem;
+            margin-left: 1rem;
+        }
+        .ageMobile {
+            display: inline;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+        }
+        .seasonsMobile {
+            display: inline;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+        }
+
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }//textMobile
     .reproducir{
         text-decoration: none;
         color: $pallete1;
         text-align: center;
-        font-size: 0.8em;
+        font-size: 0.8rem;
         border-radius: 9px;
         background-color: $pallete4;
         border: $pallete4;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 2.5em;
-        padding-right: 2.5em;
-        margin-left: 4.5em;
-        margin-top: 2em;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-left: 5rem;
+        margin-top: 2rem;
+
+        @media (max-width: $tablet) {
+            display: inline-block;
+            margin-left: 1rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
     }
 
     .miLista{
         text-decoration: none;
         color: $pallete1;
         text-align: center;
-        font-size: 0.8em;
+        font-size: 0.8rem;
         border-radius: 9px;
         background-color: $pallete3;
         border: $pallete3;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 2.5em;
-        padding-right: 2.5em;
-        margin-left: 1.5em;
-        margin-top: 2em;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+        padding-left: 2.8rem;
+        padding-right: 2.8rem;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
     } 
    
     .fa-thumbs-o-up{
-        font-size: 1.3em;
-        margin-top: 2em;
-        border-radius: 2em;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        border-radius: 2rem;
         border: solid $pallete1;
-        margin-left: 1.5em;
+        margin-left: 1.5rem;
         text-align: center;
-        width: 1em;
-        height: 1em;
-        padding: 0.5em;
+        width: 1erm;
+        height: 1rem;
+        padding: 0.8rem;
 
         &.fa-thumbs-o-up:active{
             color: red;
             background-color: rgba(243, 18, 18, 0.3);
-            border-radius: 2em;
+            border-radius: 2rem;
             border: solid red;
         }
 
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
 
     .fa-thumbs-o-down{
-        font-size: 1.3em;
-        margin-top: 2em;
-        border-radius: 2em;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        border-radius: 2rem;
         border: solid $pallete1;
-        margin-left: 1.5em;
+        margin-left: 1.5rem;
         text-align: center;
-        width: 1em;
-        height: 1em;
-        padding: 0.5em;
+        width: 1rem;
+        height: 1rem;
+        padding: 0.8rem;
 
         &.fa-thumbs-o-down:active{
             color: red;
             background-color: rgba(243, 18, 18, 0.3);
-            border-radius: 2em;
+            border-radius: 2rem;
             border: solid red;
-        }
+            }
+        
+            @media (max-width: $tablet) {
+                display: none;
+            }
+       
     }
     .textResumen{
-        width: 25em;
-        margin: 1.5em 0 0 3em;
-        font-size: 1em;
+        width: 30rem;
+        margin: 3rem 0 0 5rem;
+        font-size: 1rem;
+        line-height: 1.7rem;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
 
-    @media (max-width: 768px) {
-        font-size: 60%;
-    }
 }//heroScreen
