@@ -9,9 +9,6 @@ $mobile: 480px;
         margin-left: 3em;
     }
     .series {
-       // display: flex;
-       // overflow-x: auto;
-        //scroll-snap-type: x mandatory;
         margin-top: 2rem;
         margin-bottom: 2rem;
 
@@ -21,8 +18,7 @@ $mobile: 480px;
         }
         .serieImg {
               width: 20rem;
-         //   scroll-snap-align: center;
-            
+
             &.serieImg:nth-child(1) {
                 margin-left: 3em;
             }

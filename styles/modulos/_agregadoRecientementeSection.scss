@@ -9,10 +9,6 @@ $mobile: 480px;
         margin-left: 3em;
     }
     .agregadosRecientemente {
-       // height: 15em;
-        //display: flex;
-        //overflow-x: auto;
-        //scroll-snap-type: x mandatory;
         margin-top: 2rem;
 
         @media (max-width: $tablet) {
@@ -20,7 +16,6 @@ $mobile: 480px;
         }
         .agregadosRecientementeImg {
             width: 20rem;
-            //scroll-snap-align: center;
             &.agregadosRecientementeImg:nth-child(1) {
                 margin-left: 3em;
             }
