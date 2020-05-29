@@ -13,10 +13,24 @@ menuOn.onclick = function (event) {
     $('.series').slick({
       infinite: true,
       arrows: true,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 3,
     
       responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2
+          }
+        },
         {
           breakpoint: 480,
           settings: {
@@ -33,10 +47,24 @@ $(document).ready(function(){
     $('.seguirViendo').slick({
       infinite: true,
       arrows: true,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 3,
     
       responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2
+          }
+        },
         {
           breakpoint: 480,
           settings: {
@@ -53,9 +81,23 @@ $(document).ready(function(){
         $('.agregadosRecientemente').slick({
           infinite: true,
           arrows: true,
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 3,
           responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2
+              }
+            },
             {
               breakpoint: 480,
               settings: {

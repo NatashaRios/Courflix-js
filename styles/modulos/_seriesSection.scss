@@ -17,7 +17,7 @@ $mobile: 480px;
             margin-bottom: 1rem;
         }
         .serieImg {
-              width: 20rem;
+              width: 22rem;
 
             &.serieImg:nth-child(1) {
                 margin-left: 3em;
@@ -28,11 +28,11 @@ $mobile: 480px;
               }
 
               @media (max-width: $tablet) {
-                width: 11rem;
+                width: 15rem;
             }
 
             @media (max-width: $mobile) {
-                width: 13rem;
+                width: 9rem;
             }
 
         }  

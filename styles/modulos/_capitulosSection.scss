@@ -32,10 +32,10 @@ $mobile: 480px;
                 }
 
                 @media (max-width: $tablet) {
-                   width: 13rem;
+                   width: 12rem;
                 }
                 @media (max-width: $mobile) {
-                    width: 11rem;
+                    //width: 10rem;
                 }
             }//capitulosImg
 
@@ -60,12 +60,23 @@ $mobile: 480px;
                     margin: 0.5rem 0 1rem 3rem;
                     line-height: 1.3rem;
 
+                    @media (max-width: $tablet) {
+                        line-height: 1rem;
+                    }
+
                     @media (max-width: $mobile) {
                         font-size: 0.7em;
-                        width: 13rem;
-                        margin-right: 1rem;
+                        width: 15rem;
+                       // margin-right: 1rem;
+                        line-height: 1rem;
                     }
                 
+                }
+                @media (max-width: $tablet) {
+                    margin-top: 0.5rem;
+                }
+                @media (max-width: $mobile) {
+                    margin-top: 0.3rem;
                 }
         }//text
 

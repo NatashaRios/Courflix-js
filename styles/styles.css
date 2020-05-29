@@ -255,7 +255,7 @@
   }
 }
 .seriesSection .series .serieImg {
-  width: 20rem;
+  width: 22rem;
 }
 .seriesSection .series .serieImg.serieImg:nth-child(1) {
   margin-left: 3em;
@@ -265,12 +265,12 @@
 }
 @media (max-width: 768px) {
   .seriesSection .series .serieImg {
-    width: 11rem;
+    width: 15rem;
   }
 }
 @media (max-width: 480px) {
   .seriesSection .series .serieImg {
-    width: 13rem;
+    width: 9rem;
   }
 }
 
@@ -289,7 +289,7 @@
   }
 }
 .seguirViendoSection .seguirViendo .progress .seguirViendoImg {
-  width: 20rem;
+  width: 22rem;
 }
 .seguirViendoSection .seguirViendo .progress .seguirViendoImg.seguirViendoImg:nth-child(1) {
   margin-left: 3em;
@@ -299,12 +299,12 @@
 }
 @media (max-width: 768px) {
   .seguirViendoSection .seguirViendo .progress .seguirViendoImg {
-    width: 11rem;
+    width: 15rem;
   }
 }
 @media (max-width: 480px) {
   .seguirViendoSection .seguirViendo .progress .seguirViendoImg {
-    width: 13rem;
+    width: 9rem;
   }
 }
 .seguirViendoSection .seguirViendo .progress .line {
@@ -402,7 +402,7 @@
   }
 }
 .agregadoRecientementeSection .agregadosRecientemente .agregadosRecientementeImg {
-  width: 20rem;
+  width: 22rem;
 }
 .agregadoRecientementeSection .agregadosRecientemente .agregadosRecientementeImg.agregadosRecientementeImg:nth-child(1) {
   margin-left: 3em;
@@ -412,12 +412,12 @@
 }
 @media (max-width: 768px) {
   .agregadoRecientementeSection .agregadosRecientemente .agregadosRecientementeImg {
-    width: 11rem;
+    width: 15rem;
   }
 }
 @media (max-width: 480px) {
   .agregadoRecientementeSection .agregadosRecientemente .agregadosRecientementeImg {
-    width: 13rem;
+    width: 9rem;
   }
 }
 

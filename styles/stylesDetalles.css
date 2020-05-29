@@ -289,12 +289,7 @@
 }
 @media (max-width: 768px) {
   .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-    width: 13rem;
-  }
-}
-@media (max-width: 480px) {
-  .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-    width: 11rem;
+    width: 12rem;
   }
 }
 .capitulosSection .capitulosTemporada .capitulo .text {
@@ -319,11 +314,26 @@
   margin: 0.5rem 0 1rem 3rem;
   line-height: 1.3rem;
 }
+@media (max-width: 768px) {
+  .capitulosSection .capitulosTemporada .capitulo .text .description {
+    line-height: 1rem;
+  }
+}
 @media (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .text .description {
     font-size: 0.7em;
-    width: 13rem;
-    margin-right: 1rem;
+    width: 15rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .capitulosSection .capitulosTemporada .capitulo .text {
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .capitulosSection .capitulosTemporada .capitulo .text {
+    margin-top: 0.3rem;
   }
 }
 @media (max-width: 768px) {
