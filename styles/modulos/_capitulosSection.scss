@@ -35,7 +35,8 @@ $mobile: 480px;
                    width: 12rem;
                 }
                 @media (max-width: $mobile) {
-                    width: 10rem;
+                    height: 6rem;
+                    margin-right: 0.5rem;
                 }
             }//capitulosImg
 
@@ -71,7 +72,7 @@ $mobile: 480px;
 
                     @media (max-width: $mobile) {
                         font-size: 0.7em;
-                        width: 16rem;
+                        width: 14rem;
                         margin: 0;
                         line-height: 1rem;
                         margin-top: 0.2rem;

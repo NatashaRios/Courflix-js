@@ -299,7 +299,8 @@
 }
 @media (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-    width: 10rem;
+    height: 6rem;
+    margin-right: 0.5rem;
   }
 }
 .capitulosSection .capitulosTemporada .capitulo .text {
@@ -337,7 +338,7 @@
 @media (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .text .description {
     font-size: 0.7em;
-    width: 16rem;
+    width: 14rem;
     margin: 0;
     line-height: 1rem;
     margin-top: 0.2rem;
