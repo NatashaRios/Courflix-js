@@ -72,10 +72,11 @@ $mobile: 480px;
 
                     @media (max-width: $mobile) {
                         font-size: 0.6em;
-                        width: 15rem;
+                        width: 12rem;
                         margin: 0;
                         line-height: 1rem;
                         margin-top: 0.2rem;
+                        margin-right: 1rem;
                     }
                 
                 }
