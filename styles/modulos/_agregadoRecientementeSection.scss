@@ -1,21 +1,31 @@
 $pallete1: white;
 $pallete2: rgba(7, 7, 7, 0.9);
-$tablet: 768px;
+$ipadpro: 1024px;
+$ipad: 768px;
 $mobile: 480px;
 
 .agregadoRecientementeSection {
     .agregadosRecientementeTitle {
         color: $pallete1;
-        margin-left: 3em;
+        margin-left: 3rem;
+        font-size: 1.5em;
+        font-weight: bold;
+
+        @media screen and (max-width: $ipad) {
+            margin-left: 2.5rem;
+            font-size: 1.2em;
+            margin-bottom: 1.5rem;
+        }
     }
     .agregadosRecientemente {
         margin-top: 2rem;
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             margin-top: 1rem;
         }
         .agregadosRecientementeImg {
             width: 20rem;
+            margin-bottom: 2rem;
             &.agregadosRecientementeImg:nth-child(1) {
                 margin-left: 3em;
             }
@@ -24,14 +34,12 @@ $mobile: 480px;
                 transform: scale(1.1);
               }
 
-              @media (max-width: $tablet) {
+              @media screen and (max-width: $ipadpro) {
                 width: 15rem;
             }
-
-            @media (max-width: $mobile) {
-                width: 11rem;
+            @media screen and (max-width: $mobile) {
+                width: 18rem;
             }
-          
         }
     }//agregadosRecientemente
 }//agregadoRecientementeSection

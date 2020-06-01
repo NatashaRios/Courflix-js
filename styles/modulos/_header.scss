@@ -1,6 +1,7 @@
 $pallete1: white;
 $pallete2: rgba(7, 7, 7, 0.9);
-$tablet: 768px;
+$ipadpro: 1024px;
+$ipad: 768px;
 $mobile: 480px;
 
 .header {
@@ -10,11 +11,11 @@ $mobile: 480px;
     height: 3.5rem;
     z-index: 1;
 
-    @media (max-width: $tablet) {
+    @media screen and (max-width: $ipad) {
         height: 2.5rem;
     }
 
-    @media (max-width: $mobile) {
+    @media screen and (max-width: $mobile) {
         height: 2rem;
     }
     .menuOn{
@@ -22,14 +23,22 @@ $mobile: 480px;
         outline: none;
         background-color: transparent;
         border: $pallete2;
-        margin-left: 1rem;
+        margin: 0.2rem auto auto 2rem;
         height: 1.5rem;
         .fa-bars {
             color: $pallete1;
-            font-size: 1.5em;
+            font-size: 2.5em;
+
+            @media screen and (max-width:$mobile) {
+                font-size: 2rem;
+            }
         }
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: block;
+        }
+
+        @media screen and (max-width:$mobile) {
+            margin: 0 auto auto 1.2rem;
         }
     }
     .titlePage {
@@ -39,11 +48,16 @@ $mobile: 480px;
             margin-left: 5rem;
             margin-bottom: -1rem;
 
-            @media (max-width: $tablet) {
-                width: 5rem;
-                margin-top: -1rem;
+            @media screen and (max-width: $ipad) {
+                width: 7rem;
+                margin-top: -1.1rem;
                 margin-bottom: 0;
+                margin-left: 7rem;
                 padding-bottom: 1rem;
+            }
+
+            @media screen and (max-width: $mobile) {
+                width: 6rem;
             }
         }
     }
@@ -52,7 +66,7 @@ $mobile: 480px;
         font-size: 0.9rem;
         text-align: center;
         margin-left: 16rem;
-        margin-top: -1rem;
+        margin-top: -1.2rem;
         .listaNav{
             display: flex;
             .itemNav {
@@ -77,42 +91,52 @@ $mobile: 480px;
                     text-decoration: none;
                     margin-left: 0.8rem;
                     color: $pallete1;
+
+                    @media screen and (max-width: $ipad) {
+                        line-height: 1.7rem;
+                    }
+                    @media screen and (max-width: $mobile) {
+                        line-height: 0;
+                    }
                 }
                 .miListaNav{
                     text-decoration: none;
                     margin-left: 0.8rem;
                     color: $pallete1;
+
+                    @media screen and (max-width: $ipad){
+                        margin-top: 1.5rem;
+                    }
+                    @media screen and (max-width: $mobile) {
+                        margin-top: 0;
+                    }
                 }
                
-                @media (max-width: $tablet) {
+                @media screen and (max-width: $ipad) {
                     text-align: start;
-                    width: 10rem;
-                    padding-top: 1em;
+                    width: 15rem;
+                    padding-top: 1rem;
                     height: 2.5rem;
+                    font-size: 1.5em;
 
                     &:hover {
                         background-color: black;
                     }
 
-                    @media (max-width: $mobile) {
-                        font-size: 0.9em;
+                    @media screen and (max-width: $mobile) {
+                        font-size: 1em;
+                        margin-bottom: 0;
                     }
                 }
             }//itemNav
-            @media (max-width: $tablet) {
+            @media screen and (max-width: $ipad) {
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 0;
-                margin-top: 0.5rem;
                 background-color: $pallete2;
                 height: 100vh;
-                width: 10rem;
+                width: 15rem;
                 margin-left: -16rem;
                 display: none;
-                } 
-
-                @media (max-width: $tablet) {
-                    margin-top: 0;
                 }
         }//listaNav
         }//navBar

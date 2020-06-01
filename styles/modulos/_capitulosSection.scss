@@ -1,36 +1,44 @@
 $pallete1: white;
 $pallete2: rgba(7, 7, 7, 0.9);
-$tablet: 768px;
+$ipadpro: 1024px;
+$ipad: 768px;
 $mobile: 480px;
 
 .capitulosSection {
     width: 100%;
     .temporada {
         color: $pallete1;
-        margin: 1rem 0 1rem 3rem;
+        margin: 1rem 0 2rem 3rem;
+        font-size: 1.2em;
+        font-weight: bold;
 
     }
     .capitulosTemporada {
-        @media (max-width: $tablet) {
-            display: flex;
-            flex-direction: column;
-        }
+        margin-bottom: 5rem;
+       
         .capitulo {
             .capitulosImg{
-                margin-bottom: 1rem;
                 width: 20rem;
+                margin-bottom: 1rem;
                 &.capitulosImg:nth-child(1) {
                     margin-left: 3rem;
 
-                    @media (max-width: $tablet) {
+                    @media screen and (max-width: $ipad) {
+                        margin-left: 1rem;
+                    }
+                    @media screen and (max-width: $mobile) {
                         margin-left: 0;
                     }
                 }
-
-                @media (max-width: $tablet) {
-                   width: 12rem;
+                @media screen and (max-width: $ipadpro) {
+                    width: 15rem;
                 }
-                @media (max-width: $mobile) {
+
+                @media screen and (max-width: $ipad) {
+                   width: 11rem;
+                   
+                }
+                @media screen and (max-width: $mobile) {
                     height: 6rem;
                     margin-right: 0.5rem;
                 }
@@ -44,29 +52,43 @@ $mobile: 480px;
                     margin-bottom: 0.5rem;
                     &.title:nth-child(1) {
                         margin-left: 3rem;
-                    
-                        @media (max-width: $mobile){
+                        
+                        @media screen and (max-width: $ipad) {
+                            margin-left: 1rem;
+                        }
+                        @media screen and (max-width: $mobile){
                              margin-left: 0;
                         }
 
                     }
+                    @media screen and (max-width: $ipad) {
 
-                    @media (max-width: $mobile) {
+                    }
+
+                    @media screen and (max-width: $mobile) {
                         font-size: 0.7rem;
                     }
                         
                 }
                 .description{
-                    font-size: 0.8rem;
+                    font-size: 0.8em;
                     width: 20rem;
-                    margin: 0.5rem 0 1rem 3rem;
+                    margin: 0.5rem auto 5rem 3rem;
                     line-height: 1.3rem;
 
-                    @media (max-width: $tablet) {
-                        line-height: 1rem;
+                    @media screen and (max-width: $ipadpro) {
+                        width: 15rem;
+                        font-size: 1em;
+                        line-height: 1.5rem;
+                    }
+                    
+                    @media screen and (max-width: $ipad) {
+                        width: 11rem;
+                        text-align: start;
+                        margin-left: 1rem;
                     }
 
-                    @media (max-width: $mobile) {
+                    @media screen and (max-width: $mobile) {
                         font-size: 0.6em;
                         width: 12rem;
                         margin: 0;
@@ -76,15 +98,15 @@ $mobile: 480px;
                     }
                 
                 }
-                @media (max-width: $tablet) {
+                @media screen and (max-width: $ipad) {
                     margin-top: 0.5rem;
                 }
-                @media (max-width: $mobile) {
+                @media screen and (max-width: $mobile) {
                     margin-top: 0;
                 }
         }//text
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             flex: 1 0 auto;
             display: flex;
             justify-content: space-around;

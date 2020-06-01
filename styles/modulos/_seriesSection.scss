@@ -1,18 +1,27 @@
 $pallete1: white;
 $pallete2: rgba(7, 7, 7, 0.9);
-$tablet: 768px;
+$ipadpro: 1024px;
+$ipad: 768px;
 $mobile: 480px;
 
 .seriesSection {
     .seriesTitle {
         color: $pallete1;
-        margin-left: 3em;
+        margin-left: 3rem;
+        font-size: 1.5em;
+        font-weight: bold;
+
+        @media screen and (max-width: $ipad) {
+            margin-left: 2.5rem;
+            font-size: 1.2em;
+            margin-bottom: 1.5rem;
+        }
     }
     .series {
         margin-top: 2rem;
         margin-bottom: 2rem;
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
@@ -27,14 +36,13 @@ $mobile: 480px;
                 transform: scale(1.1);
               }
 
-              @media (max-width: $tablet) {
-                width: 15rem;
-            }
+              @media screen and (max-width: $ipadpro) {
+                  width: 15rem;
+              }
 
-            @media (max-width: $mobile) {
-                width: 11rem;
+              @media screen and (max-width: $mobile) {
+                width: 18rem;
             }
-
         }  
     }//series
 }//seriesSection

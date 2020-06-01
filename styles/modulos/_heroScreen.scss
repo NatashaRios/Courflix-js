@@ -1,7 +1,8 @@
 $pallete1: white;
 $pallete3: rgba(126, 121, 121, 0.6);
 $pallete4: rgba(243, 18, 18, 0.6);
-$tablet: 768px;
+$ipadpro: 1024px;
+$ipad: 768px;
 $mobile: 480px;
 
 .heroScreen {
@@ -10,22 +11,22 @@ $mobile: 480px;
     height: 45rem;
     color: $pallete1;
 
-    @media (max-width: $tablet) {
+    @media screen and (max-width: $ipad) {
         background-size: cover;
         background-position: center;
-        height: 35rem;
+        height: 30rem;
     }
 
-    @media (max-width: $mobile) {
+    @media screen and (max-width: $mobile) {
         height: 30rem;
     }
     .title{
         .titleOriginal {
-            margin: 10rem auto 6rem 6rem;
+            margin: 10rem auto 4rem 6rem;
             font-weight: bold;
             font-size: 1.7rem;
 
-            @media (max-width: $tablet) {
+            @media screen and (max-width: $ipad) {
                 display: none;
             }
         }
@@ -35,19 +36,19 @@ $mobile: 480px;
             font-size: 4.5em;
             margin: auto auto 2rem 6rem;
 
-            @media (max-width: $tablet) {
-                font-size: 1.5em;
-                margin: 8rem auto 1rem 1rem;
+            @media screen and (max-width: $ipad) {
+                font-size: 1.7em;
+                margin: 10rem auto 1rem 3rem;
                 width: 20rem;
             }
         }
     }
     .textMobile {
         display: none;
-        margin-bottom: 2rem;
-        margin-left: 1rem;
+        margin-bottom: 2.5rem;
+        margin-left: 3rem;
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: block;
         }
         .yearMobile{
@@ -75,8 +76,8 @@ $mobile: 480px;
             background-color: $pallete4;
         } 
 
-        @media (max-width: $tablet) {
-            margin-left: 1rem;
+        @media screen and (max-width: $ipad) {
+            margin-left: 3rem;
         }
     }
     .miLista {
@@ -94,7 +95,7 @@ $mobile: 480px;
             background-color: $pallete4;
         }
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: none;
         }
     }
@@ -103,7 +104,7 @@ $mobile: 480px;
         margin: 3rem 0 0 6rem;
         font-size: 1.3em;
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: none;
         }
     }
@@ -113,7 +114,7 @@ $mobile: 480px;
         font-size: 1.3em;
         line-height: 1.8rem;
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: none;
         }
     }

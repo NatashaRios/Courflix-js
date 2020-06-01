@@ -5,12 +5,12 @@
   width: 100%;
   height: 3.5rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     height: 2.5rem;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .header {
     height: 2rem;
   }
@@ -20,14 +20,16 @@
   margin-top: 0.8rem;
   margin-left: 5rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header .titlePage .titlePageImg {
-    width: 5rem;
+    margin-top: 0.4rem;
+    width: 7rem;
     margin-top: 0.6rem;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .header .titlePage .titlePageImg {
+    width: 6rem;
     margin-top: 0.4rem;
   }
 }
@@ -69,7 +71,7 @@
   margin-left: 0.8rem;
   color: white;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header .navBar {
     display: none;
   }
@@ -81,14 +83,14 @@
   height: 45rem;
   color: white;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .heroScreen {
     background-size: cover;
     background-position: center;
     height: 35rem;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .heroScreen {
     height: 30rem;
   }
@@ -98,7 +100,7 @@
   margin-left: 5rem;
   margin-top: 5rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .heroScreen .titleSerie-detalle .titleSerieImg-detalle {
     display: none;
   }
@@ -129,7 +131,7 @@
   margin-left: 1rem;
   margin-top: 1rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .heroScreen .textInfo {
     display: none;
   }
@@ -160,7 +162,7 @@
   font-size: 1rem;
   margin-left: 0.5rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .heroScreen .textMobile {
     display: block;
   }
@@ -180,7 +182,7 @@
   margin-left: 5rem;
   margin-top: 2rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .heroScreen .reproducir {
     display: inline-block;
     margin-left: 1rem;
@@ -203,7 +205,7 @@
   margin-left: 1.5rem;
   margin-top: 2rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .heroScreen .miLista {
     display: none;
   }
@@ -225,7 +227,7 @@
   border-radius: 2rem;
   border: solid red;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .heroScreen .fa-thumbs-o-up {
     display: none;
   }
@@ -247,7 +249,7 @@
   border-radius: 2rem;
   border: solid red;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .heroScreen .fa-thumbs-o-down {
     display: none;
   }
@@ -258,7 +260,7 @@
   font-size: 1rem;
   line-height: 1.7rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .heroScreen .textResumen {
     display: none;
   }
@@ -269,32 +271,41 @@
 }
 .capitulosSection .temporada {
   color: white;
-  margin: 1rem 0 1rem 3rem;
+  margin: 1rem 0 2rem 3rem;
+  font-size: 1.2em;
+  font-weight: bold;
 }
-@media (max-width: 768px) {
-  .capitulosSection .capitulosTemporada {
-    display: flex;
-    flex-direction: column;
-  }
+.capitulosSection .capitulosTemporada {
+  margin-bottom: 5rem;
 }
 .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-  margin-bottom: 1rem;
   width: 20rem;
+  margin-bottom: 1rem;
 }
 .capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:nth-child(1) {
   margin-left: 3rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:nth-child(1) {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:nth-child(1) {
     margin-left: 0;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-    width: 12rem;
+    width: 15rem;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
+    width: 11rem;
+  }
+}
+@media screen and (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
     height: 6rem;
     margin-right: 0.5rem;
@@ -311,28 +322,42 @@
 .capitulosSection .capitulosTemporada .capitulo .text .title.title:nth-child(1) {
   margin-left: 3rem;
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  .capitulosSection .capitulosTemporada .capitulo .text .title.title:nth-child(1) {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .text .title.title:nth-child(1) {
     margin-left: 0;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .text .title {
     font-size: 0.7rem;
   }
 }
 .capitulosSection .capitulosTemporada .capitulo .text .description {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   width: 20rem;
-  margin: 0.5rem 0 1rem 3rem;
+  margin: 0.5rem auto 5rem 3rem;
   line-height: 1.3rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .capitulosSection .capitulosTemporada .capitulo .text .description {
-    line-height: 1rem;
+    width: 15rem;
+    font-size: 1em;
+    line-height: 1.5rem;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  .capitulosSection .capitulosTemporada .capitulo .text .description {
+    width: 11rem;
+    text-align: start;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .text .description {
     font-size: 0.6em;
     width: 12rem;
@@ -342,17 +367,17 @@
     margin-right: 1rem;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .capitulosSection .capitulosTemporada .capitulo .text {
     margin-top: 0.5rem;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .text {
     margin-top: 0;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .capitulosSection .capitulosTemporada .capitulo {
     flex: 1 0 auto;
     display: flex;

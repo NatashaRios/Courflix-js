@@ -2,7 +2,8 @@ $pallete1: white;
 $pallete3: rgba(126, 121, 121, 0.6);
 $pallete4: rgba(243, 18, 18, 0.6);
 $pallete5: rgb(2, 121, 2);
-$tablet: 768px;
+$ipadpro: 1024px;
+$ipad: 768px;
 $mobile: 480px;
 
 .heroScreen {
@@ -11,12 +12,12 @@ $mobile: 480px;
     height: 45rem;
     color: $pallete1;
 
-    @media (max-width: $tablet) {
+    @media screen and (max-width: $ipad) {
         background-size: cover;
         background-position: center;
         height: 35rem;
     }
-    @media (max-width: $mobile) {
+    @media screen and (max-width: $mobile) {
         height: 30rem;
     }
     .titleSerie-detalle {
@@ -25,7 +26,7 @@ $mobile: 480px;
             margin-left: 5rem;
             margin-top: 5rem;
 
-            @media (max-width: $tablet) {
+            @media screen and (max-width: $ipad) {
                 display: none;
             }
         }
@@ -55,7 +56,7 @@ $mobile: 480px;
             margin-left: 1rem;
             margin-top: 1rem;
         }
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: none;
         }
     }//textInfo
@@ -85,7 +86,7 @@ $mobile: 480px;
             margin-left: 0.5rem;
         }
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: block;
         }
     }//textMobile
@@ -104,7 +105,7 @@ $mobile: 480px;
         margin-left: 5rem;
         margin-top: 2rem;
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: inline-block;
             margin-left: 1rem;
             padding-right: 2rem;
@@ -127,7 +128,7 @@ $mobile: 480px;
         margin-left: 1.5rem;
         margin-top: 2rem;
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: none;
         }
     } 
@@ -150,7 +151,7 @@ $mobile: 480px;
             border: solid red;
         }
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: none;
         }
     }
@@ -173,7 +174,7 @@ $mobile: 480px;
             border: solid red;
             }
         
-            @media (max-width: $tablet) {
+            @media screen and (max-width: $ipad) {
                 display: none;
             }
        
@@ -184,7 +185,7 @@ $mobile: 480px;
         font-size: 1rem;
         line-height: 1.7rem;
 
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $ipad) {
             display: none;
         }
     }
