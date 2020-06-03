@@ -34,9 +34,10 @@ $mobile: 480px;
                    width: 15rem;
                 }
                 @media screen and (max-width: $mobile) {
-                    width: 10rem;
-                    height: auto;
+                    width: auto;
+                    height: 6rem;
                     margin-right: 0.5rem;
+        
                 }
             }//capitulosImg
            
