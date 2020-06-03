@@ -297,7 +297,8 @@
 }
 @media screen and (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-    width: 11rem;
+    width: 12rem;
+    height: auto;
     margin-right: 0.5rem;
   }
 }
