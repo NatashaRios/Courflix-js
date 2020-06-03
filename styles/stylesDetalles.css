@@ -87,11 +87,6 @@
   .heroScreen {
     background-size: cover;
     background-position: center;
-    height: 35rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .heroScreen {
     height: 30rem;
   }
 }
@@ -143,14 +138,14 @@
 .heroScreen .textMobile .titleMobile {
   font-size: 1.5rem;
   padding-top: 10rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
 .heroScreen .textMobile .yearMobile {
   display: inline;
   font-size: 1rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 .heroScreen .textMobile .ageMobile {
   display: inline;
@@ -185,7 +180,7 @@
 @media screen and (max-width: 768px) {
   .heroScreen .reproducir {
     display: inline-block;
-    margin-left: 1rem;
+    margin-left: 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
   }
@@ -282,32 +277,27 @@
   width: 20rem;
   margin-bottom: 1rem;
 }
-.capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:nth-child(1) {
+.capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:first-child {
   margin-left: 3rem;
 }
 @media screen and (max-width: 768px) {
-  .capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:nth-child(1) {
+  .capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:first-child {
     margin-left: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:nth-child(1) {
+  .capitulosSection .capitulosTemporada .capitulo .capitulosImg.capitulosImg:first-child {
     margin-left: 0;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-    width: 15rem;
   }
 }
 @media screen and (max-width: 768px) {
   .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-    width: 11rem;
+    width: 15rem;
   }
 }
 @media screen and (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
-    height: 6rem;
+    width: 11rem;
     margin-right: 0.5rem;
   }
 }
@@ -345,15 +335,14 @@
 }
 @media screen and (max-width: 1024px) {
   .capitulosSection .capitulosTemporada .capitulo .text .description {
-    width: 15rem;
+    width: 20rem;
     font-size: 1em;
     line-height: 1.5rem;
   }
 }
 @media screen and (max-width: 768px) {
   .capitulosSection .capitulosTemporada .capitulo .text .description {
-    width: 11rem;
-    text-align: start;
+    width: 15rem;
     margin-left: 1rem;
   }
 }
@@ -377,7 +366,7 @@
     margin-top: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .capitulosSection .capitulosTemporada .capitulo {
     flex: 1 0 auto;
     display: flex;

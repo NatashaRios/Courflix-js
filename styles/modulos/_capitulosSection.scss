@@ -20,7 +20,7 @@ $mobile: 480px;
             .capitulosImg{
                 width: 20rem;
                 margin-bottom: 1rem;
-                &.capitulosImg:nth-child(1) {
+                &.capitulosImg:first-child {
                     margin-left: 3rem;
 
                     @media screen and (max-width: $ipad) {
@@ -30,20 +30,15 @@ $mobile: 480px;
                         margin-left: 0;
                     }
                 }
-                @media screen and (max-width: $ipadpro) {
-                    width: 15rem;
-                }
-
                 @media screen and (max-width: $ipad) {
-                   width: 11rem;
-                   
+                   width: 15rem;
                 }
                 @media screen and (max-width: $mobile) {
-                    height: 6rem;
+                    width: 11rem;
                     margin-right: 0.5rem;
                 }
             }//capitulosImg
-
+           
             .text{
                 color: $pallete1;
                 .title{
@@ -77,14 +72,13 @@ $mobile: 480px;
                     line-height: 1.3rem;
 
                     @media screen and (max-width: $ipadpro) {
-                        width: 15rem;
+                        width: 20rem;
                         font-size: 1em;
                         line-height: 1.5rem;
                     }
                     
                     @media screen and (max-width: $ipad) {
-                        width: 11rem;
-                        text-align: start;
+                        width: 15rem;
                         margin-left: 1rem;
                     }
 
@@ -106,7 +100,7 @@ $mobile: 480px;
                 }
         }//text
 
-        @media screen and (max-width: $ipad) {
+        @media screen and (max-width: $mobile) {
             flex: 1 0 auto;
             display: flex;
             justify-content: space-around;

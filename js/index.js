@@ -2,13 +2,22 @@ const menuOn = document.querySelector(".js-menuOn");
 const listaNav = document.querySelector(".js-listaNav");
 
 //Al clickear el menu hamburguesa se abre el menu y si esta abierto se cierra
-menuOn.onclick = function (event) {
-    if(listaNav.style.display == "none") {
-    listaNav.style.display = "block";
-    }else {
-        listaNav.style.display = "none"
-    }
+menuOn.onclick = function(e) {
+  e.stopPropagation();
+  toggleMenu ();
+};
+listaNav.onclick = function (e) {
+  e.stopPropagation();
 }
+document.body.onclick = function () {
+  listaNav.classList.remove("open");
+}
+function toggleMenu () {
+  listaNav.classList.toggle("open");
+}
+
+
+
 
 //El carrousel con slick
  $(document).ready(function(){

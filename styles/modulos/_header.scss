@@ -65,31 +65,31 @@ $mobile: 480px;
         font-weight: bold;
         font-size: 0.9rem;
         text-align: center;
-        margin-left: 16rem;
-        margin-top: -1.2rem;
+        margin-left: -6rem;
+        margin-top: -1rem;
         .listaNav{
-            display: flex;
+            display: inline-flex;
             .itemNav {
-                display: flex;
+                display: inline-flex;
                 .inicioNav{
                     text-decoration: none;
-                    margin-left: 0.8rem;
+                    margin-left: 1rem;
                     color: $pallete1;
                 }
             
                 .seriesNav{
                     text-decoration: none;
-                    margin-left: 0.8rem;
+                    margin-left: 1rem;
                     color: $pallete1;
                 }
                 .peliculasNav{
                     text-decoration: none;
-                    margin-left: 0.8rem;
+                    margin-left: 1rem;
                     color: $pallete1;
                 }
                 .agregadosNav{
                     text-decoration: none;
-                    margin-left: 0.8rem;
+                    margin-left: 1rem;
                     color: $pallete1;
 
                     @media screen and (max-width: $ipad) {
@@ -101,7 +101,7 @@ $mobile: 480px;
                 }
                 .miListaNav{
                     text-decoration: none;
-                    margin-left: 0.8rem;
+                    margin-left: 1rem;
                     color: $pallete1;
 
                     @media screen and (max-width: $ipad){
@@ -126,6 +126,7 @@ $mobile: 480px;
                     @media screen and (max-width: $mobile) {
                         font-size: 1em;
                         margin-bottom: 0;
+                        width: 14rem;
                     }
                 }
             }//itemNav
@@ -135,9 +136,19 @@ $mobile: 480px;
                 background-color: $pallete2;
                 height: 100vh;
                 width: 15rem;
-                margin-left: -16rem;
+                margin-left: -30rem;
+                margin-top: -0.2rem;
                 display: none;
+
+                &.open {
+                    display: inline-flex;
                 }
+            }
+            @media screen and (max-width: $mobile) {
+                margin-left: -6rem;
+                width: 14rem;
+                margin-top: -0.2rem;
+            }
         }//listaNav
         }//navBar
 } //header

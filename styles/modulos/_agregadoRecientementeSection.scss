@@ -5,6 +5,10 @@ $ipad: 768px;
 $mobile: 480px;
 
 .agregadoRecientementeSection {
+    .espacio {
+        position: relative;
+        bottom: 5rem;
+    }
     .agregadosRecientementeTitle {
         color: $pallete1;
         margin-left: 3rem;
