@@ -30,7 +30,8 @@
 }
 @media screen and (max-width: 480px) {
   .header .menuOn .fa-bars {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
   }
 }
 @media screen and (max-width: 768px) {
@@ -147,7 +148,7 @@
     background-color: rgba(7, 7, 7, 0.9);
     height: 100vh;
     width: 15rem;
-    margin-left: -30rem;
+    margin-left: -29rem;
     margin-top: -0.2rem;
     display: none;
   }
@@ -157,7 +158,7 @@
 }
 @media screen and (max-width: 480px) {
   .header .navBar .listaNav {
-    margin-left: -6rem;
+    margin-left: -5.5rem;
     width: 14rem;
     margin-top: -0.2rem;
   }
@@ -173,11 +174,6 @@
   .heroScreen {
     background-size: cover;
     background-position: center;
-    height: 30rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .heroScreen {
     height: 30rem;
   }
 }

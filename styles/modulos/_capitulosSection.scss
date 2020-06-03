@@ -34,7 +34,7 @@ $mobile: 480px;
                    width: 15rem;
                 }
                 @media screen and (max-width: $mobile) {
-                    width: 12rem;
+                    width: 10rem;
                     height: auto;
                     margin-right: 0.5rem;
                 }
@@ -55,9 +55,6 @@ $mobile: 480px;
                         @media screen and (max-width: $mobile){
                              margin-left: 0;
                         }
-
-                    }
-                    @media screen and (max-width: $ipad) {
 
                     }
 
@@ -88,8 +85,7 @@ $mobile: 480px;
                         width: 12rem;
                         margin: 0;
                         line-height: 1rem;
-                        margin-top: 0.2rem;
-                        margin-right: 1rem;
+                        margin: 0.2rem 1rem 0.5rem auto;
                     }
                 
                 }
