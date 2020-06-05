@@ -136,7 +136,7 @@ $mobile: 480px;
                 background-color: $pallete2;
                 height: 100vh;
                 width: 15rem;
-                margin-left: -29rem;
+                margin-left: -27rem;
                 margin-top: -0.2rem;
                 display: none;
 
@@ -145,7 +145,7 @@ $mobile: 480px;
                 }
             }
             @media screen and (max-width: $mobile) {
-                margin-left: -5.5rem;
+                margin-left: -3.5rem;
                 width: 14rem;
                 margin-top: -0.2rem;
             }

@@ -3,7 +3,8 @@ const settings = {
   infinite: false,
   arrows: true,
   variableWidth: true,
-  slidesToShow: 4,
+  accesibility: true,
+  slidesToShow: 6,
   slidesToScroll: 3,
   responsive: [
     {

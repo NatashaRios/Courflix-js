@@ -24,7 +24,9 @@ function toggleMenu () {
     $('.series').slick({
       infinite: true,
       arrows: true,
-      slidesToShow: 4,
+      variableWidth: true,
+      accesibility: true,
+      slidesToShow: 5,
       slidesToScroll: 3,
     
       responsive: [
@@ -58,7 +60,9 @@ $(document).ready(function(){
     $('.seguirViendo').slick({
       infinite: true,
       arrows: true,
-      slidesToShow: 4,
+      variableWidth: true,
+      accesibility: true,
+      slidesToShow: 6,
       slidesToScroll: 3,
     
       responsive: [
@@ -92,7 +96,9 @@ $(document).ready(function(){
         $('.agregadosRecientemente').slick({
           infinite: true,
           arrows: true,
-          slidesToShow: 4,
+          variableWidth: true,
+          accesibility: true,
+          slidesToShow: 5,
           slidesToScroll: 3,
           responsive: [
             {

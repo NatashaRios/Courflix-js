@@ -4,6 +4,20 @@ $ipadpro: 1024px;
 $ipad: 768px;
 $mobile: 480px;
 
+slick-prev,
+        .slick-next,
+        .slick-arrow {
+            z-index: 999;
+        }
+
+        .slick-prev {
+            left: 0;
+        }
+
+        .slick-next {
+            right: 0;
+        }
+
 .capitulosSection {
     width: 100%;
     .temporada {
@@ -14,8 +28,6 @@ $mobile: 480px;
 
     }
     .capitulosTemporada {
-        margin-bottom: 5rem;
-       
         .capitulo {
             .capitulosImg{
                 width: 20rem;
@@ -67,7 +79,7 @@ $mobile: 480px;
                 .description{
                     font-size: 0.8em;
                     width: 20rem;
-                    margin: 0.5rem auto 5rem 3rem;
+                    margin: 0.5rem auto auto 3rem;
                     line-height: 1.3rem;
 
                     @media screen and (max-width: $ipadpro) {
@@ -86,7 +98,7 @@ $mobile: 480px;
                         width: 12rem;
                         margin: 0;
                         line-height: 1rem;
-                        margin: 0.2rem 1rem 0.5rem auto;
+                        margin-top: 0.2rem;
                     }
                 
                 }

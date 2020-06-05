@@ -4,6 +4,20 @@ $ipadpro: 1024px;
 $ipad: 768px;
 $mobile: 480px;
 
+slick-prev,
+        .slick-next,
+        .slick-arrow {
+            z-index: 999;
+        }
+
+        .slick-prev {
+            left: 0;
+        }
+
+        .slick-next {
+            right: 0;
+        }
+
 .agregadoRecientementeSection {
     .espacio {
         position: relative;
@@ -37,11 +51,11 @@ $mobile: 480px;
             &.agregadosRecientementeImg:hover{
                 transform: scale(1.1);
               }
-
+            
               @media screen and (max-width: $ipadpro) {
-                width: 15rem;
+                width: 25rem;
             }
-            @media screen and (max-width: $mobile) {
+            @media screen and (max-width: $ipad) {
                 width: 18rem;
             }
         }

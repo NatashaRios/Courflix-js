@@ -79,14 +79,13 @@
 
 .heroScreen {
   background-image: url("../assets/breakingBad.png");
-  max-width: 90rem;
-  height: 45rem;
+  max-width: 100vw;
+  background-size: cover;
+  background-position: center;
   color: white;
 }
 @media screen and (max-width: 768px) {
   .heroScreen {
-    background-size: cover;
-    background-position: center;
     height: 30rem;
   }
 }
@@ -261,6 +260,20 @@
   }
 }
 
+slick-prev,
+.slick-next,
+.slick-arrow {
+  z-index: 999;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
 .capitulosSection {
   width: 100%;
 }
@@ -269,9 +282,6 @@
   margin: 1rem 0 2rem 3rem;
   font-size: 1.2em;
   font-weight: bold;
-}
-.capitulosSection .capitulosTemporada {
-  margin-bottom: 5rem;
 }
 .capitulosSection .capitulosTemporada .capitulo .capitulosImg {
   width: 20rem;
@@ -331,7 +341,7 @@
 .capitulosSection .capitulosTemporada .capitulo .text .description {
   font-size: 0.8em;
   width: 20rem;
-  margin: 0.5rem auto 5rem 3rem;
+  margin: 0.5rem auto auto 3rem;
   line-height: 1.3rem;
 }
 @media screen and (max-width: 1024px) {
@@ -353,7 +363,7 @@
     width: 12rem;
     margin: 0;
     line-height: 1rem;
-    margin: 0.2rem 1rem 0.5rem auto;
+    margin-top: 0.2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -378,6 +388,7 @@
   background-color: black;
   font-family: "Open Sans", sans-serif;
   min-width: 100vw;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=stylesDetalles.css.map */
