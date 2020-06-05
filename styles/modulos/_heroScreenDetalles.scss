@@ -9,6 +9,7 @@ $mobile: 480px;
 .heroScreen {
     background-image: url("../assets/breakingBad.png");
     max-width: 100vw;
+    height: 40rem;
     background-size: cover;
     background-position: center;
     color: $pallete1;
@@ -20,7 +21,7 @@ $mobile: 480px;
         .titleSerieImg-detalle {
             width: 17rem;
             margin-left: 5rem;
-            margin-top: 5rem;
+            margin-top: 4rem;
 
             @media screen and (max-width: $ipad) {
                 display: none;

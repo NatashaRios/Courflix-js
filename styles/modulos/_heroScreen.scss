@@ -8,6 +8,7 @@ $mobile: 480px;
 .heroScreen {
     background-image: url("../assets/blackSummer.png");
     max-width: 100vw;
+    height: 40rem;
     background-size: cover;
     background-position: center;
     color: $pallete1;
@@ -17,7 +18,7 @@ $mobile: 480px;
     }
     .title{
         .titleOriginal {
-            margin: 10rem auto 4rem 6rem;
+            margin: 6rem auto 3rem 6rem;
             font-weight: bold;
             font-size: 1.7rem;
 
